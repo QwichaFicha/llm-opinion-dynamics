@@ -1,0 +1,5 @@
+{
+  "status": "configuration_error",
+  "error_type": "ValueError",
+  "hint": "Check local .env; no provider call was made."
+}

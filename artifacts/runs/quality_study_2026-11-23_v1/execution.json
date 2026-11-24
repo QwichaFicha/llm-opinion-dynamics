@@ -1,0 +1,27 @@
+{
+  "status": "ok",
+  "requests": 156,
+  "repeats": [
+    {
+      "condition": "control",
+      "status": "ok",
+      "requests": 24
+    },
+    {
+      "condition": "news_only",
+      "status": "ok",
+      "requests": 24
+    },
+    {
+      "condition": "peers_only",
+      "status": "ok",
+      "requests": 24
+    },
+    {
+      "condition": "combined",
+      "status": "ok",
+      "requests": 24
+    }
+  ],
+  "finished_utc": "2026-11-23T19:03:24.564971+00:00"
+}

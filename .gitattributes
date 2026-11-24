@@ -1,0 +1,6 @@
+# Preserve experiment bytes and SHA-256 manifests across platforms.
+* -text
+# Windows CRLF is intentional in archived experiment files.
+* whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+*.pdf binary
+*.png binary

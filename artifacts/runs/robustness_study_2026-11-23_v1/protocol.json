@@ -1,0 +1,177 @@
+{
+  "created_utc": "2026-11-23T19:30:52.555278+00:00",
+  "model": "bonsai2-27b",
+  "base_url": "https://ftii.llm.actcognitive.org/v1",
+  "request_cap": 264,
+  "plan": [
+    {
+      "name": "peers_only",
+      "seed": 33,
+      "rounds": 4,
+      "news": false,
+      "peers": true,
+      "memory_rounds": 1,
+      "topology": "ring",
+      "news_value": 0.8,
+      "population": 6,
+      "include_initial_opinion": true
+    },
+    {
+      "name": "combined_no_initial",
+      "seed": 11,
+      "rounds": 4,
+      "news": true,
+      "peers": true,
+      "memory_rounds": 1,
+      "topology": "ring",
+      "news_value": 0.8,
+      "population": 6,
+      "include_initial_opinion": false
+    },
+    {
+      "name": "news_only",
+      "seed": 33,
+      "rounds": 4,
+      "news": true,
+      "peers": false,
+      "memory_rounds": 1,
+      "topology": "ring",
+      "news_value": 0.8,
+      "population": 6,
+      "include_initial_opinion": true
+    },
+    {
+      "name": "combined",
+      "seed": 33,
+      "rounds": 4,
+      "news": true,
+      "peers": true,
+      "memory_rounds": 1,
+      "topology": "ring",
+      "news_value": 0.8,
+      "population": 6,
+      "include_initial_opinion": true
+    },
+    {
+      "name": "combined_memory4",
+      "seed": 11,
+      "rounds": 4,
+      "news": true,
+      "peers": true,
+      "memory_rounds": 4,
+      "topology": "ring",
+      "news_value": 0.8,
+      "population": 6,
+      "include_initial_opinion": true
+    },
+    {
+      "name": "peers_only",
+      "seed": 22,
+      "rounds": 4,
+      "news": false,
+      "peers": true,
+      "memory_rounds": 1,
+      "topology": "ring",
+      "news_value": 0.8,
+      "population": 6,
+      "include_initial_opinion": true
+    },
+    {
+      "name": "combined",
+      "seed": 22,
+      "rounds": 4,
+      "news": true,
+      "peers": true,
+      "memory_rounds": 1,
+      "topology": "ring",
+      "news_value": 0.8,
+      "population": 6,
+      "include_initial_opinion": true
+    },
+    {
+      "name": "combined_memory4_no_initial",
+      "seed": 11,
+      "rounds": 4,
+      "news": true,
+      "peers": true,
+      "memory_rounds": 4,
+      "topology": "ring",
+      "news_value": 0.8,
+      "population": 6,
+      "include_initial_opinion": false
+    },
+    {
+      "name": "control",
+      "seed": 33,
+      "rounds": 4,
+      "news": false,
+      "peers": false,
+      "memory_rounds": 1,
+      "topology": "ring",
+      "news_value": 0.8,
+      "population": 6,
+      "include_initial_opinion": true
+    },
+    {
+      "name": "control",
+      "seed": 22,
+      "rounds": 4,
+      "news": false,
+      "peers": false,
+      "memory_rounds": 1,
+      "topology": "ring",
+      "news_value": 0.8,
+      "population": 6,
+      "include_initial_opinion": true
+    },
+    {
+      "name": "news_only",
+      "seed": 22,
+      "rounds": 4,
+      "news": true,
+      "peers": false,
+      "memory_rounds": 1,
+      "topology": "ring",
+      "news_value": 0.8,
+      "population": 6,
+      "include_initial_opinion": true
+    }
+  ],
+  "randomized_run_order_seed": 2303,
+  "source_sha256": {
+    "src\\__init__.py": "a184a83e8741b3c1567e12e1b3dad70c3d406c2f708eb6f49c6f66920fb0f6c1",
+    "src\\experiment.py": "1c8d3f954588159aeb9b1e67608a77d14b1dc47d26284877305ffe4fcc05d6ab",
+    "src\\models.py": "444b07db83383812886e7cada2c727fea733214048a230a86cfd78dd5cc32d3c",
+    "src\\policy.py": "34a1f720dbcae921bef608a25bb9ad28bfabfd7dacc7aa0390c3e507dd609179",
+    "src\\quality_checks.py": "a5db63c4bb8b82b6542cf40bd1615fff102371c28add788cafc24ea8593e1757",
+    "src\\robustness_study.py": "fe7f7f936a5d102bb4c40b3571971cc045543ea581db34a1b1be96744f841aa5",
+    "tests\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests\\test_experiments.py": "d27940f4cc816534e9e8eb92f262a3da786438a662aa7d3a8e945c06d6e27552",
+    "tests\\test_quality_checks.py": "d9e938cd4dfe8818b06b92385ddc373ff5d8d411084e8aa5fee327e993aa9318",
+    "tests\\test_robustness_study.py": "fe6cada239bf54167acf1c04d6f5fdd4ee0b7cdcd5a69a6fab54b9d6ef13823c",
+    "scripts/run_robustness_study.py": "aa376c83581e70823db56567564d791a47857324b4f1fc0dee3329b1b598535e"
+  },
+  "generation": {
+    "temperature": "0",
+    "max_tokens": "300",
+    "thinking": "not explicitly enabled"
+  },
+  "limits": {
+    "rpm": 20,
+    "tpm_reserved": 100000,
+    "concurrent": 1,
+    "min_interval_seconds": 3.2,
+    "automatic_retries": 0
+  },
+  "historical_baselines": {
+    "seed11": "artifacts/runs/live_pilot_2026-11-23_v1",
+    "exact_repeat": "artifacts/runs/quality_study_2026-11-23_v1"
+  },
+  "planned_contrasts": [
+    "Each baseline condition minus control within each seed 11,22,33; inspect sign and range across three profile sets",
+    "Memory 4 minus memory 1, with and without historical initial-opinion field",
+    "Field removed minus field present, at both memory windows",
+    "Interaction: (memory4_no_initial-memory1_no_initial)-(memory4_initial-memory1_initial)"
+  ],
+  "interpretation": "Three initial profile sets are a small sensitivity screen, not human subjects or stochastic repeats. Memory/anchor factorial is seed11 only. No significance tests planned."
+}

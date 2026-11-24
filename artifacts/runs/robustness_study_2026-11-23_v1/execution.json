@@ -1,0 +1,95 @@
+{
+  "status": "ok",
+  "requests": 264,
+  "completed": [
+    {
+      "run": "peers_only_33",
+      "status": "ok",
+      "requests": 24,
+      "mean_opinion": 0.014999999999999994,
+      "variance": 0.2740916666666667,
+      "mean_abs_shift": 0.05265033333333334
+    },
+    {
+      "run": "combined_no_initial_11",
+      "status": "ok",
+      "requests": 24,
+      "mean_opinion": 0.0015686666666666627,
+      "variance": 0.30083197024222225,
+      "mean_abs_shift": 0.04275216666666667
+    },
+    {
+      "run": "news_only_33",
+      "status": "ok",
+      "requests": 24,
+      "mean_opinion": 0.01565100000000001,
+      "variance": 0.30827250836866665,
+      "mean_abs_shift": 0.002734666666666668
+    },
+    {
+      "run": "combined_33",
+      "status": "ok",
+      "requests": 24,
+      "mean_opinion": 0.014342666666666662,
+      "variance": 0.2733489278492222,
+      "mean_abs_shift": 0.051698666666666664
+    },
+    {
+      "run": "combined_memory4_11",
+      "status": "ok",
+      "requests": 24,
+      "mean_opinion": 0.018235333333333326,
+      "variance": 0.31050190357555557,
+      "mean_abs_shift": 0.05941883333333333
+    },
+    {
+      "run": "peers_only_22",
+      "status": "ok",
+      "requests": 24,
+      "mean_opinion": 0.0011896666666666583,
+      "variance": 0.30617622387822224,
+      "mean_abs_shift": 0.02206366666666666
+    },
+    {
+      "run": "combined_22",
+      "status": "ok",
+      "requests": 24,
+      "mean_opinion": 0.018552833333333327,
+      "variance": 0.2814524375534722,
+      "mean_abs_shift": 0.03942683333333333
+    },
+    {
+      "run": "combined_memory4_no_initial_11",
+      "status": "ok",
+      "requests": 24,
+      "mean_opinion": 0.0,
+      "variance": 0.2011,
+      "mean_abs_shift": 0.12098749999999998
+    },
+    {
+      "run": "control_33",
+      "status": "ok",
+      "requests": 24,
+      "mean_opinion": 0.018182000000000007,
+      "variance": 0.3072129128116667,
+      "mean_abs_shift": 0.0002036666666666668
+    },
+    {
+      "run": "control_22",
+      "status": "ok",
+      "requests": 24,
+      "mean_opinion": 0.011371499999999984,
+      "variance": 0.3288676266335833,
+      "mean_abs_shift": 0.00026249999999999885
+    },
+    {
+      "run": "news_only_22",
+      "status": "ok",
+      "requests": 24,
+      "mean_opinion": 0.011371499999999984,
+      "variance": 0.3288676266335833,
+      "mean_abs_shift": 0.00026249999999999885
+    }
+  ],
+  "finished_utc": "2026-11-23T19:44:57.687507+00:00"
+}

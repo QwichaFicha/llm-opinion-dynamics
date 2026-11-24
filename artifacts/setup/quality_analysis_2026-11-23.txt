@@ -1,0 +1,329 @@
+{
+  "request_count": 156,
+  "successful_http_responses": 156,
+  "diagnostics_count": 60,
+  "valid_diagnostic_actions": 60,
+  "objective_total": 12,
+  "objective_passed": 11,
+  "objective_failures": [
+    "weighted_update"
+  ],
+  "prompt_tokens": 44356,
+  "completion_tokens": 11097,
+  "total_tokens": 55453,
+  "network_seconds_median": 1.645732749995659,
+  "diagnostic_variants": [
+    {
+      "variant": "control_original",
+      "responses": 6,
+      "valid": 6,
+      "mean_opinion": -0.002785500000000015,
+      "mean_signed_shift": 0.0006629999999999877,
+      "mean_abs_shift": 0.0009243333333333233
+    },
+    {
+      "variant": "positive_original",
+      "responses": 6,
+      "valid": 6,
+      "mean_opinion": 0.03580349999999999,
+      "mean_signed_shift": 0.03925199999999999,
+      "mean_abs_shift": 0.039513333333333324
+    },
+    {
+      "variant": "negative_original",
+      "responses": 6,
+      "valid": 6,
+      "mean_opinion": -0.002785500000000015,
+      "mean_signed_shift": 0.0006629999999999877,
+      "mean_abs_shift": 0.0009243333333333233
+    },
+    {
+      "variant": "positive_paraphrase",
+      "responses": 6,
+      "valid": 6,
+      "mean_opinion": 0.019136833333333325,
+      "mean_signed_shift": 0.02258533333333333,
+      "mean_abs_shift": 0.022846666666666664
+    },
+    {
+      "variant": "negative_paraphrase",
+      "responses": 6,
+      "valid": 6,
+      "mean_opinion": 0.005547833333333326,
+      "mean_signed_shift": 0.008996333333333328,
+      "mean_abs_shift": 0.009257666666666664
+    },
+    {
+      "variant": "positive_without_initial",
+      "responses": 6,
+      "valid": 6,
+      "mean_opinion": 0.019136833333333325,
+      "mean_signed_shift": 0.02258533333333333,
+      "mean_abs_shift": 0.022846666666666664
+    },
+    {
+      "variant": "negative_without_initial",
+      "responses": 6,
+      "valid": 6,
+      "mean_opinion": -0.002785500000000015,
+      "mean_signed_shift": 0.0006629999999999877,
+      "mean_abs_shift": 0.0009243333333333233
+    },
+    {
+      "variant": "control_without_initial",
+      "responses": 6,
+      "valid": 6,
+      "mean_opinion": -0.002785500000000015,
+      "mean_signed_shift": 0.0006629999999999877,
+      "mean_abs_shift": 0.0009243333333333233
+    }
+  ],
+  "paired_diagnostics": [
+    {
+      "comparison": "direction",
+      "first": "positive_original",
+      "second": "negative_original",
+      "mean_abs_difference": 0.038589000000000005,
+      "max_abs_difference": 0.18153399999999997,
+      "equal_opinions": 4,
+      "first_minus_second_mean": 0.038589000000000005
+    },
+    {
+      "comparison": "positive_paraphrase",
+      "first": "positive_original",
+      "second": "positive_paraphrase",
+      "mean_abs_difference": 0.016666666666666663,
+      "max_abs_difference": 0.09999999999999998,
+      "equal_opinions": 5,
+      "first_minus_second_mean": 0.016666666666666663
+    },
+    {
+      "comparison": "negative_paraphrase",
+      "first": "negative_original",
+      "second": "negative_paraphrase",
+      "mean_abs_difference": 0.00833333333333334,
+      "max_abs_difference": 0.050000000000000044,
+      "equal_opinions": 5,
+      "first_minus_second_mean": -0.00833333333333334
+    },
+    {
+      "comparison": "positive_anchor_field",
+      "first": "positive_original",
+      "second": "positive_without_initial",
+      "mean_abs_difference": 0.016666666666666663,
+      "max_abs_difference": 0.09999999999999998,
+      "equal_opinions": 5,
+      "first_minus_second_mean": 0.016666666666666663
+    },
+    {
+      "comparison": "negative_anchor_field",
+      "first": "negative_original",
+      "second": "negative_without_initial",
+      "mean_abs_difference": 0.0,
+      "max_abs_difference": 0.0,
+      "equal_opinions": 6,
+      "first_minus_second_mean": 0.0
+    },
+    {
+      "comparison": "control_anchor_field",
+      "first": "control_original",
+      "second": "control_without_initial",
+      "mean_abs_difference": 0.0,
+      "max_abs_difference": 0.0,
+      "equal_opinions": 6,
+      "first_minus_second_mean": 0.0
+    }
+  ],
+  "first_step_repetition": {
+    "control_original": {
+      "same_prompts": 6,
+      "equal_opinions": 6
+    },
+    "positive_original": {
+      "same_prompts": 6,
+      "equal_opinions": 6
+    }
+  },
+  "trajectory_repeats": [
+    {
+      "condition": "control",
+      "status": "ok",
+      "requests": 24,
+      "old_mean": -0.002785500000000015,
+      "new_mean": -0.002785500000000015,
+      "old_variance": 0.2929293423705833,
+      "new_variance": 0.2929293423705833,
+      "final_mean_abs_difference": 0.0,
+      "identical_trajectory": true,
+      "same_input_calls": 24,
+      "same_input_equal_response": 24,
+      "same_input_equal_opinion": 24
+    },
+    {
+      "condition": "news_only",
+      "status": "ok",
+      "requests": 24,
+      "old_mean": 0.03580349999999999,
+      "new_mean": 0.03580349999999999,
+      "old_variance": 0.29442507857591665,
+      "new_variance": 0.29442507857591665,
+      "final_mean_abs_difference": 0.0,
+      "identical_trajectory": true,
+      "same_input_calls": 24,
+      "same_input_equal_response": 24,
+      "same_input_equal_opinion": 24
+    },
+    {
+      "condition": "peers_only",
+      "status": "ok",
+      "requests": 24,
+      "old_mean": 0.018235333333333326,
+      "new_mean": 0.018235333333333326,
+      "old_variance": 0.31050190357555557,
+      "new_variance": 0.31050190357555557,
+      "final_mean_abs_difference": 0.0,
+      "identical_trajectory": true,
+      "same_input_calls": 24,
+      "same_input_equal_response": 24,
+      "same_input_equal_opinion": 24
+    },
+    {
+      "condition": "combined",
+      "status": "ok",
+      "requests": 24,
+      "old_mean": 0.029901999999999995,
+      "new_mean": 0.029901999999999995,
+      "old_variance": 0.3189236346866667,
+      "new_variance": 0.3189236346866667,
+      "final_mean_abs_difference": 0.0,
+      "identical_trajectory": true,
+      "same_input_calls": 24,
+      "same_input_equal_response": 24,
+      "same_input_equal_opinion": 24
+    }
+  ],
+  "gateway_models": [
+    {
+      "id": "bonsai2-27b",
+      "owned_by": "openai"
+    }
+  ],
+  "scope": "Engineering screening, not a broad benchmark or empirical human-behaviour validation",
+  "public_sources": [
+    {
+      "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
+      "title": "Prism ML model card",
+      "accessed": "2026-11-23"
+    },
+    {
+      "url": "https://prismml.com/news/bonsai-2-27b",
+      "title": "PrismML release announcement",
+      "accessed": "2026-11-23"
+    }
+  ],
+  "arithmetic_probe": {
+    "requests": 12,
+    "total_tokens": 2282,
+    "results": [
+      {
+        "mode": "baseline",
+        "mirrored": false,
+        "repeat": 1,
+        "passed": false,
+        "opinion": 0.24,
+        "status": "ok"
+      },
+      {
+        "mode": "baseline",
+        "mirrored": false,
+        "repeat": 2,
+        "passed": false,
+        "opinion": 0.24,
+        "status": "ok"
+      },
+      {
+        "mode": "stepwise_prompt",
+        "mirrored": false,
+        "repeat": 1,
+        "passed": false,
+        "opinion": 0.24,
+        "status": "ok"
+      },
+      {
+        "mode": "stepwise_prompt",
+        "mirrored": false,
+        "repeat": 2,
+        "passed": false,
+        "opinion": 0.24,
+        "status": "ok"
+      },
+      {
+        "mode": "neutral_system",
+        "mirrored": false,
+        "repeat": 1,
+        "passed": true,
+        "opinion": -0.04,
+        "status": "ok"
+      },
+      {
+        "mode": "neutral_system",
+        "mirrored": false,
+        "repeat": 2,
+        "passed": true,
+        "opinion": -0.04,
+        "status": "ok"
+      },
+      {
+        "mode": "thinking_medium",
+        "mirrored": false,
+        "repeat": 1,
+        "passed": true,
+        "opinion": -0.04,
+        "status": "ok"
+      },
+      {
+        "mode": "thinking_medium",
+        "mirrored": false,
+        "repeat": 2,
+        "passed": true,
+        "opinion": -0.04,
+        "status": "ok"
+      },
+      {
+        "mode": "baseline",
+        "mirrored": true,
+        "repeat": 1,
+        "passed": false,
+        "opinion": -0.24,
+        "status": "ok"
+      },
+      {
+        "mode": "baseline",
+        "mirrored": true,
+        "repeat": 2,
+        "passed": false,
+        "opinion": -0.24,
+        "status": "ok"
+      },
+      {
+        "mode": "thinking_medium",
+        "mirrored": true,
+        "repeat": 1,
+        "passed": true,
+        "opinion": 0.04,
+        "status": "ok"
+      },
+      {
+        "mode": "thinking_medium",
+        "mirrored": true,
+        "repeat": 2,
+        "passed": true,
+        "opinion": 0.04,
+        "status": "ok"
+      }
+    ]
+  },
+  "all_followup_requests": 168,
+  "all_followup_tokens": 57735,
+  "pdf_pages": 9
+}

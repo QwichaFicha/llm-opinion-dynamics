@@ -1,0 +1,32 @@
+test_adapter_records_failed_attempt_once (test_experiments.AdapterContractTests.test_adapter_records_failed_attempt_once) ... ok
+test_missing_key_prevents_network (test_experiments.AdapterContractTests.test_missing_key_prevents_network) ... ok
+test_openai_wire_contract_with_fake_transport (test_experiments.AdapterContractTests.test_openai_wire_contract_with_fake_transport) ... ok
+test_system_role_can_be_overridden_without_changing_user_prompt (test_experiments.AdapterContractTests.test_system_role_can_be_overridden_without_changing_user_prompt) ... ok
+test_budget_failure_preserves_partial_trace (test_experiments.ExperimentTests.test_budget_failure_preserves_partial_trace) ... ok
+test_control_stays_fixed (test_experiments.ExperimentTests.test_control_stays_fixed) ... ok
+test_framework_vs_numeric_path (test_experiments.ExperimentTests.test_framework_vs_numeric_path) ... ok
+test_invalid_outputs_are_rejected (test_experiments.ExperimentTests.test_invalid_outputs_are_rejected) ... ok
+test_memory_changes_carryover_not_first_round (test_experiments.ExperimentTests.test_memory_changes_carryover_not_first_round) ... ok
+test_metrics_known_values (test_experiments.ExperimentTests.test_metrics_known_values) ... ok
+test_news_one_step_analytic (test_experiments.ExperimentTests.test_news_one_step_analytic) ... ok
+test_repeatability (test_experiments.ExperimentTests.test_repeatability) ... ok
+test_snapshot_order_invariance (test_experiments.ExperimentTests.test_snapshot_order_invariance) ... ok
+test_state_restoration_continues_identically (test_experiments.ExperimentTests.test_state_restoration_continues_identically) ... ok
+test_topology_limits_delivery (test_experiments.ExperimentTests.test_topology_limits_delivery) ... ok
+test_minimum_spacing (test_experiments.RateLimitTests.test_minimum_spacing) ... ok
+test_rolling_request_limit (test_experiments.RateLimitTests.test_rolling_request_limit) ... ok
+test_rolling_token_reservations (test_experiments.RateLimitTests.test_rolling_token_reservations) ... ok
+test_omit_initial_preserves_other_state (test_quality_checks.QualityProtocolTests.test_omit_initial_preserves_other_state) ... ok
+test_original_matches_production_prompt (test_quality_checks.QualityProtocolTests.test_original_matches_production_prompt) ... ok
+test_paraphrase_only_changes_news_text (test_quality_checks.QualityProtocolTests.test_paraphrase_only_changes_news_text) ... ok
+test_plan_count_and_pairs (test_quality_checks.QualityProtocolTests.test_plan_count_and_pairs) ... ok
+test_anchor_toggle_preserves_current_opinion_and_exposures (test_robustness_study.RobustnessStudyTests.test_anchor_toggle_preserves_current_opinion_and_exposures) ... ok
+test_default_context_matches_archived_prompt_after_round_one (test_robustness_study.RobustnessStudyTests.test_default_context_matches_archived_prompt_after_round_one) ... ok
+test_disabled_anchor_survives_state_round_trip (test_robustness_study.RobustnessStudyTests.test_disabled_anchor_survives_state_round_trip) ... ok
+test_historical_state_defaults_to_enabled_anchor (test_robustness_study.RobustnessStudyTests.test_historical_state_defaults_to_enabled_anchor) ... ok
+test_plan_budget_and_matching_cells (test_robustness_study.RobustnessStudyTests.test_plan_budget_and_matching_cells) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 1.750s
+
+OK

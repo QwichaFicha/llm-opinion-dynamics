@@ -1,0 +1,26 @@
+{
+  "sha256": {
+    "analysis.json": "219c895dbd52ab10b2ad7fec1da0ff9197acd72d5dd80465600f61cc8c42e681",
+    "combined.checkpoint.json": "e0816fc6b1ff44251c4f2d8aac0d8c421f09a85a273b5b04ed70835e14220762",
+    "combined.json": "082783124fbc22aaa6b0252544ceece3a8d1ca61ffe8404fcd15ee5071a50792",
+    "control.checkpoint.json": "f6c9fa960c0fe9062eee74c8e96773a805149601168ac3229b0f5c41cd4fae41",
+    "control.json": "cf1531f933f78185ffbd902efc1e2fd51deb1135df80ba48aa7846c7be653b22",
+    "execution.json": "4dddd1e01e0424a79d85f6905ef24325488668d0501d5a8951e6793ae590d1d8",
+    "news_only.checkpoint.json": "5d6525bd6d43814650cc9afd3b36b88e1ba0efb9c8fcd441002decb895cf7a63",
+    "news_only.json": "407eee1ffad3ad6d37b9c4072558f4e9f89919a7ac3ba55d5d7ae92e1a6e7485",
+    "peers_only.checkpoint.json": "8f5e9ad7c442c5a22ed559c0abccbc0b23f9a9c8fcabefed04aba9846f2be4b0",
+    "peers_only.json": "361bd6cfdebe65a087f1621e7d86dec00787d746f04938e1a004e3e4f25818db",
+    "protocol.json": "6e0be7581e2cc124f9a7b05f55628e3912e3773e9e078379cde8005d6f15eaf4",
+    "smoke.checkpoint.json": "da53916adb05ea53ced7c80f973216adb82e84c549b3a37299fe72b44d178ce4",
+    "smoke.json": "2dac6a68958eb2cd2407a404f7fc8e572982725c04063f7a32573571dc495da3",
+    "summary.csv": "5c1f4834fc0d40d5bc4108992029c26715d8c928f929db90d16990578497d563",
+    "source_snapshot/scripts/run_live_pilot.py": "9da00221a56003992c362c6f05ed1e75c607f395f8bd4226d2fce1f44a22c274",
+    "source_snapshot/src/experiment.py": "bcbbf043036085db909cfeaa3611417e1da868cfdfb3e0d753c6814492ce4311",
+    "source_snapshot/src/models.py": "92b69b4cc2dd44d5807679cd38bf23f838efcfc889ff06b55cf8e0ffb6dc74aa",
+    "source_snapshot/src/policy.py": "34a1f720dbcae921bef608a25bb9ad28bfabfd7dacc7aa0390c3e507dd609179",
+    "source_snapshot/src/__init__.py": "a184a83e8741b3c1567e12e1b3dad70c3d406c2f708eb6f49c6f66920fb0f6c1",
+    "source_snapshot/tests/test_experiments.py": "88ed4826361b8fea91755967a4ff2f6ebce9ddf2d6a013ec8e3b0ae1e53b3425",
+    "source_snapshot/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "report_sha256": "3e5b24104b5ebebf990ab0039d157fb17515fdef70a31f0479ed5095c8fd63a5"
+}

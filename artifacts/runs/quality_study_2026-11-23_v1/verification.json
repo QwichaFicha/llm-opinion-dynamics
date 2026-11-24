@@ -1,0 +1,15 @@
+{
+  "new_generation_requests": 168,
+  "total_tokens": 57735,
+  "all_four_repeat_trajectories_equal": true,
+  "repeat_response_texts_equal": 96,
+  "objective_score": "11/12 in simulation system role",
+  "arithmetic_followup_requests": 12,
+  "arithmetic_probe_reasoning_metadata_present": true,
+  "source_snapshot_verified": true,
+  "poststudy_unit_tests": 22,
+  "secret_scan_files": 186,
+  "secret_leaks": 0,
+  "pdf_pages": 9,
+  "visual_qa": "All 9 pages inspected; final modified cover re-rendered and inspected"
+}

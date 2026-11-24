@@ -1,0 +1,42 @@
+{
+  "finished_conditions": [
+    {
+      "condition": "smoke",
+      "status": "ok",
+      "requests": 6,
+      "seconds": 17.56843650000519,
+      "error": null
+    },
+    {
+      "condition": "control",
+      "status": "ok",
+      "requests": 24,
+      "seconds": 77.15511969999352,
+      "error": null
+    },
+    {
+      "condition": "news_only",
+      "status": "ok",
+      "requests": 24,
+      "seconds": 76.78964129999804,
+      "error": null
+    },
+    {
+      "condition": "peers_only",
+      "status": "ok",
+      "requests": 24,
+      "seconds": 77.03032069999608,
+      "error": null
+    },
+    {
+      "condition": "combined",
+      "status": "ok",
+      "requests": 24,
+      "seconds": 76.73326850000012,
+      "error": null
+    }
+  ],
+  "requests": 102,
+  "status": "ok",
+  "finished_utc": "2026-11-23T18:46:43.808923+00:00"
+}

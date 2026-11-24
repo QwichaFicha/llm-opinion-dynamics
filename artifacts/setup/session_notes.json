@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-21",
+  "source": "C:/Users/shuma/Downloads/идеи_для_лабы.pdf",
+  "selected_idea": "1: Формирование и изменение коллективных предпочтений",
+  "llm_status": "User explicitly requested proceeding without a key; live calls deferred",
+  "initial_workspace": "empty",
+  "setup_observations": [
+    "Python and Poppler did not resolve by bare command name in PowerShell; bundled absolute executable paths work.",
+    "Bundled Python is 3.12.14, compatible with selected installation.",
+    "First pip installation failed with WinError 10013 due to sandbox network restrictions; this does not establish package unavailability.",
+    "Installation with network escalation completed successfully: gdm-concordia 2.4.0. pip check found no broken requirements.",
+    "Online main branch includes modules whose old paths return HTTP 404; installed package must be inspected instead of assuming API compatibility.",
+    "Set PYTHONIOENCODING=utf-8 for Russian text in process output.",
+    "OpenAI SDK was installed during exploration but the final adapter uses Python urllib; SDK is not needed by requirements.txt. Full lock records the actual experimental environment.",
+    "Live configuration check exited 1 as expected without credentials; no provider call was made. See artifacts/runs/live_configuration_check.json."
+  ]
+}

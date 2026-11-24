@@ -1,0 +1,87 @@
+{
+  "created_utc": "2026-11-23T19:03:38.408033+00:00",
+  "request_cap": 12,
+  "plan": [
+    {
+      "mode": "baseline",
+      "repeat": 1,
+      "prompt": "Compute opinion = 0.7*(-0.4) + 0.3*0.8. Do not round to one decimal place.\nReturn exactly one JSON object with opinion (number in [-1,1]) and message (nonempty text up to 800 characters). No Markdown or additional keys.",
+      "expected": -0.04
+    },
+    {
+      "mode": "baseline",
+      "repeat": 2,
+      "prompt": "Compute opinion = 0.7*(-0.4) + 0.3*0.8. Do not round to one decimal place.\nReturn exactly one JSON object with opinion (number in [-1,1]) and message (nonempty text up to 800 characters). No Markdown or additional keys.",
+      "expected": -0.04
+    },
+    {
+      "mode": "stepwise_prompt",
+      "repeat": 1,
+      "prompt": "Compute opinion = 0.7*(-0.4) + 0.3*0.8. Do not round to one decimal place.\nReturn exactly one JSON object with opinion (number in [-1,1]) and message (nonempty text up to 800 characters). No Markdown or additional keys.",
+      "expected": -0.04
+    },
+    {
+      "mode": "stepwise_prompt",
+      "repeat": 2,
+      "prompt": "Compute opinion = 0.7*(-0.4) + 0.3*0.8. Do not round to one decimal place.\nReturn exactly one JSON object with opinion (number in [-1,1]) and message (nonempty text up to 800 characters). No Markdown or additional keys.",
+      "expected": -0.04
+    },
+    {
+      "mode": "neutral_system",
+      "repeat": 1,
+      "prompt": "Compute opinion = 0.7*(-0.4) + 0.3*0.8. Do not round to one decimal place.\nReturn exactly one JSON object with opinion (number in [-1,1]) and message (nonempty text up to 800 characters). No Markdown or additional keys.",
+      "expected": -0.04
+    },
+    {
+      "mode": "neutral_system",
+      "repeat": 2,
+      "prompt": "Compute opinion = 0.7*(-0.4) + 0.3*0.8. Do not round to one decimal place.\nReturn exactly one JSON object with opinion (number in [-1,1]) and message (nonempty text up to 800 characters). No Markdown or additional keys.",
+      "expected": -0.04
+    },
+    {
+      "mode": "thinking_medium",
+      "repeat": 1,
+      "prompt": "Compute opinion = 0.7*(-0.4) + 0.3*0.8. Do not round to one decimal place.\nReturn exactly one JSON object with opinion (number in [-1,1]) and message (nonempty text up to 800 characters). No Markdown or additional keys.",
+      "expected": -0.04
+    },
+    {
+      "mode": "thinking_medium",
+      "repeat": 2,
+      "prompt": "Compute opinion = 0.7*(-0.4) + 0.3*0.8. Do not round to one decimal place.\nReturn exactly one JSON object with opinion (number in [-1,1]) and message (nonempty text up to 800 characters). No Markdown or additional keys.",
+      "expected": -0.04
+    },
+    {
+      "mode": "baseline",
+      "repeat": 1,
+      "prompt": "Compute opinion = 0.7*0.4 + 0.3*(-0.8). Do not round to one decimal place.\nReturn exactly one JSON object with opinion (number in [-1,1]) and message (nonempty text up to 800 characters). No Markdown or additional keys.",
+      "expected": 0.04,
+      "mirrored": true
+    },
+    {
+      "mode": "baseline",
+      "repeat": 2,
+      "prompt": "Compute opinion = 0.7*0.4 + 0.3*(-0.8). Do not round to one decimal place.\nReturn exactly one JSON object with opinion (number in [-1,1]) and message (nonempty text up to 800 characters). No Markdown or additional keys.",
+      "expected": 0.04,
+      "mirrored": true
+    },
+    {
+      "mode": "thinking_medium",
+      "repeat": 1,
+      "prompt": "Compute opinion = 0.7*0.4 + 0.3*(-0.8). Do not round to one decimal place.\nReturn exactly one JSON object with opinion (number in [-1,1]) and message (nonempty text up to 800 characters). No Markdown or additional keys.",
+      "expected": 0.04,
+      "mirrored": true
+    },
+    {
+      "mode": "thinking_medium",
+      "repeat": 2,
+      "prompt": "Compute opinion = 0.7*0.4 + 0.3*(-0.8). Do not round to one decimal place.\nReturn exactly one JSON object with opinion (number in [-1,1]) and message (nonempty text up to 800 characters). No Markdown or additional keys.",
+      "expected": 0.04,
+      "mirrored": true
+    }
+  ],
+  "type": "Exploratory debugging after a failed benchmark item; not a held-out model benchmark",
+  "thinking_budget": 2048,
+  "other_budget": 300,
+  "temperature": 0,
+  "source_sha256": "abf658a17fa9b3da02eb803dbb411d74498b4f5402624c6745a685bf82d4ff57"
+}

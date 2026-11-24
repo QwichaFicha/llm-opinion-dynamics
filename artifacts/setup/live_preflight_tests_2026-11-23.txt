@@ -1,0 +1,22 @@
+test_adapter_records_failed_attempt_once (test_experiments.AdapterContractTests.test_adapter_records_failed_attempt_once) ... ok
+test_missing_key_prevents_network (test_experiments.AdapterContractTests.test_missing_key_prevents_network) ... ok
+test_openai_wire_contract_with_fake_transport (test_experiments.AdapterContractTests.test_openai_wire_contract_with_fake_transport) ... ok
+test_budget_failure_preserves_partial_trace (test_experiments.ExperimentTests.test_budget_failure_preserves_partial_trace) ... ok
+test_control_stays_fixed (test_experiments.ExperimentTests.test_control_stays_fixed) ... ok
+test_framework_vs_numeric_path (test_experiments.ExperimentTests.test_framework_vs_numeric_path) ... ok
+test_invalid_outputs_are_rejected (test_experiments.ExperimentTests.test_invalid_outputs_are_rejected) ... ok
+test_memory_changes_carryover_not_first_round (test_experiments.ExperimentTests.test_memory_changes_carryover_not_first_round) ... ok
+test_metrics_known_values (test_experiments.ExperimentTests.test_metrics_known_values) ... ok
+test_news_one_step_analytic (test_experiments.ExperimentTests.test_news_one_step_analytic) ... ok
+test_repeatability (test_experiments.ExperimentTests.test_repeatability) ... ok
+test_snapshot_order_invariance (test_experiments.ExperimentTests.test_snapshot_order_invariance) ... ok
+test_state_restoration_continues_identically (test_experiments.ExperimentTests.test_state_restoration_continues_identically) ... ok
+test_topology_limits_delivery (test_experiments.ExperimentTests.test_topology_limits_delivery) ... ok
+test_minimum_spacing (test_experiments.RateLimitTests.test_minimum_spacing) ... ok
+test_rolling_request_limit (test_experiments.RateLimitTests.test_rolling_request_limit) ... ok
+test_rolling_token_reservations (test_experiments.RateLimitTests.test_rolling_token_reservations) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 1.690s
+
+OK

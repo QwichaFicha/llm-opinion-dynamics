@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-23",
+  "source": "C:\\Users\\shuma\\Documents\\Codex\\2026-11-21\\agentsociety-2-concordia-oasis-llm-gpt",
+  "destination": "C:\\Users\\shuma\\PycharmProjects\\ЛабыПитон\\llm-opinion-dynamics",
+  "original_copy_retained": true,
+  "baseline_manifest_files_verified": 67,
+  "historical_reports_byte_identical": true,
+  "idea_source": {
+    "extracted_text_preserved": true,
+    "historical_original_pdf_available": false
+  },
+  "tests": {
+    "passed": 14,
+    "log": "artifacts/setup/relocation_tests_2026-11-23.txt"
+  },
+  "smoke": "ok",
+  "pip_check": "No broken requirements found",
+  "interpreter": "C:\\Users\\shuma\\PycharmProjects\\ЛабыПитон\\llm-opinion-dynamics\\.venv\\Scripts\\python.exe",
+  "versions": {
+    "gdm-concordia": "2.4.0",
+    "pip": "25.0.1",
+    "reportlab": "5.1.0",
+    "pypdf": "7.1.1"
+  },
+  "origin": "https://github.com/QwichaFicha/llm-opinion-dynamics.git",
+  "git_changes": "local, not committed or pushed",
+  "local_env_created_from_template": true
+}

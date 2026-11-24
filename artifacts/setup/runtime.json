@@ -1,0 +1,43 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "packages": {
+    "gdm-concordia": "2.4.0",
+    "reportlab": "5.1.0",
+    "openai": "3.57.0",
+    "pypdf": "7.1.1",
+    "numpy": "2.5.5",
+    "pandas": "3.1.1"
+  },
+  "inspected_modules": [
+    {
+      "module": "concordia.agents.entity_agent",
+      "sha256": "0211aadcfc231e146f749c62c085660ae4ef075be4205b23a7b3082126eb6466"
+    },
+    {
+      "module": "concordia.components.agent.memory",
+      "sha256": "73d53c32f83999f87a7069e41fd7bd0aa226d12be4510a63e1f447290860b11e"
+    },
+    {
+      "module": "concordia.components.agent.concat_act_component",
+      "sha256": "0a011808e3f2c20d8a0aeda877a0f962bb6ede78eaeb0d4dd32608b270e22608"
+    },
+    {
+      "module": "concordia.components.agent.observation",
+      "sha256": "1f4f201a5f9a0af8f60b8e789829936278992e0d1fca315d58760922f0c32265"
+    },
+    {
+      "module": "concordia.language_model.language_model",
+      "sha256": "9c44c51b03928bd8471c241db8354a7c47df3c8dd2b857fc4787f520f2ee11d4"
+    },
+    {
+      "module": "concordia.environment.engines.sequential",
+      "sha256": "64201119ad7118f12e78986c8cf4f2c3443c71b090ad8e4cb0de941ead1bf136"
+    }
+  ],
+  "signatures": {
+    "EntityAgent": "(agent_name: str, act_component: concordia.typing.entity_component.ActingComponent, context_processor: concordia.typing.entity_component.ContextProcessorComponent | None = None, context_components: collections.abc.Mapping[str, concordia.typing.entity_component.ContextComponent] = mappingproxy({}))",
+    "ListMemory": "(memory_bank: list[str])",
+    "ConcatActComponent": "(model: concordia.language_model.language_model.LanguageModel, component_order: collections.abc.Sequence[str] | None = None, prefix_entity_name: bool = True, randomize_choices: bool = True)"
+  }
+}

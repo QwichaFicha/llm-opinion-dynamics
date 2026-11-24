@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-25",
+  "purpose": "Submission package verification; no new LLM experiments",
+  "new_external_llm_requests": 0,
+  "clean_install": {
+    "source": "Copy of Git publication candidates, excluding .env, .venv and QA files",
+    "python": "3.12.14",
+    "requirements": "requirements.txt",
+    "fresh_virtual_environment": true,
+    "pip_install_exit_code": 0,
+    "pip_check": "No broken requirements found.",
+    "tests_command": "python -m unittest discover -s tests -v",
+    "tests_passed": 27,
+    "tests_failed": 0,
+    "recorded_console_demo_exit_code": 0,
+    "offline_concordia_demo_exit_code": 0,
+    "offline_demo_agents": 6,
+    "offline_demo_rounds": 1,
+    "offline_demo_stub_calls": 6,
+    "api_key_present_in_clean_copy": false
+  },
+  "browser_replay": {
+    "entrypoint": "demo/replay.html",
+    "recorded_cases": 15,
+    "runner": "scripts/check_demo.py / scripts/check_demo.mjs",
+    "browser": "Isolated headless Chrome with explicit CDP viewport emulation",
+    "desktop_width_css_px": 1280,
+    "mobile_width_css_px": 420,
+    "checks_passed_per_viewport": 10,
+    "horizontal_overflow": false,
+    "checked": [
+      "Exact viewport width",
+      "Recorded case count",
+      "Baseline variance",
+      "Long-memory variance",
+      "Unsupported condition/profile selection resets",
+      "Profile selection",
+      "Agent selection",
+      "No horizontal overflow",
+      "Autoplay reaches round four",
+      "Autoplay stops"
+    ],
+    "desktop_and_mobile_screenshots_visually_reviewed": true
+  },
+  "submission_pdf": {
+    "path": "reports/submission_brief.pdf",
+    "pages": 3,
+    "all_pages_rendered_and_visually_reviewed": true
+  },
+  "publication_audit": {
+    "local_api_key_exact_matches_in_publication_files": 0,
+    "possible_sk_token_matches_in_publication_files": 0,
+    "private_env_venv_idea_qa_files_in_publication_set": 0,
+    "source_snapshot_hashes_verified": 27,
+    "experiment_manifest_hashes_verified": 96,
+    "git_line_ending_conversion_disabled_to_preserve_digests": true,
+    "note": "Archived source hashes were checked against source_snapshot files, not against later edited workspace code. The arithmetic probe contains a single runner hash without an archived source snapshot and is not included in the snapshot count."
+  }
+}

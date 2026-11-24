@@ -1,0 +1,26 @@
+[
+  {
+    "memory_rounds": 1,
+    "rounds": 20,
+    "status": "ok",
+    "calls": 120,
+    "seconds": 0.8851453000024776,
+    "first_round_mean_chars": 1079.3333333333333,
+    "last_round_mean_chars": 981.8333333333334,
+    "total_prompt_chars": 118299,
+    "max_prompt_chars": 1082,
+    "stored_events_agent0": 61
+  },
+  {
+    "memory_rounds": 20,
+    "rounds": 20,
+    "status": "ok",
+    "calls": 120,
+    "seconds": 0.903943999997864,
+    "first_round_mean_chars": 1079.3333333333333,
+    "last_round_mean_chars": 5699.666666666667,
+    "total_prompt_chars": 406381,
+    "max_prompt_chars": 5708,
+    "stored_events_agent0": 61
+  }
+]

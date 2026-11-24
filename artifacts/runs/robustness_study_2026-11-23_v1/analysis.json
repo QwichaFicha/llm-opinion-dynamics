@@ -1,0 +1,1166 @@
+{
+  "status": "ok",
+  "new_runs": 11,
+  "historical_baseline_runs": 4,
+  "new_requests": 264,
+  "successful_responses": 264,
+  "new_prompt_tokens": 99402,
+  "new_completion_tokens": 19943,
+  "new_total_tokens": 119345,
+  "new_simulation_seconds": 845.0194493999734,
+  "wall_seconds": 845.132229,
+  "network_seconds_median": 1.6671084500048892,
+  "network_seconds_p95": 2.12974019999092,
+  "rate_wait_seconds": 392.7199999999284,
+  "http_errors": [],
+  "conditions": [
+    {
+      "run": "control_11",
+      "condition": "control",
+      "seed": 11,
+      "origin": "historical",
+      "status": "ok",
+      "memory_rounds": 1,
+      "include_initial_opinion": true,
+      "requests": 24,
+      "seconds": 77.15511969999352,
+      "initial_mean": -0.0034485000000000023,
+      "initial_variance": 0.29414669111191666,
+      "mean_opinion": -0.002785500000000015,
+      "variance": 0.2929293423705833,
+      "mean_abs_shift": 0.0009243333333333233,
+      "edge_disagreement": 0.519804,
+      "switches": 0,
+      "prompt_tokens": 5714,
+      "completion_tokens": 1887,
+      "last_round_prompt_chars_mean": 737.6666666666666
+    },
+    {
+      "run": "news_only_11",
+      "condition": "news_only",
+      "seed": 11,
+      "origin": "historical",
+      "status": "ok",
+      "memory_rounds": 1,
+      "include_initial_opinion": true,
+      "requests": 24,
+      "seconds": 76.78964129999804,
+      "initial_mean": -0.0034485000000000023,
+      "initial_variance": 0.29414669111191666,
+      "mean_opinion": 0.03580349999999999,
+      "variance": 0.29442507857591665,
+      "mean_abs_shift": 0.039513333333333324,
+      "edge_disagreement": 0.5031373333333333,
+      "switches": 0,
+      "prompt_tokens": 5939,
+      "completion_tokens": 1716,
+      "last_round_prompt_chars_mean": 737.1666666666666
+    },
+    {
+      "run": "peers_only_11",
+      "condition": "peers_only",
+      "seed": 11,
+      "origin": "historical",
+      "status": "ok",
+      "memory_rounds": 1,
+      "include_initial_opinion": true,
+      "requests": 24,
+      "seconds": 77.03032069999608,
+      "initial_mean": -0.0034485000000000023,
+      "initial_variance": 0.29414669111191666,
+      "mean_opinion": 0.018235333333333326,
+      "variance": 0.31050190357555557,
+      "mean_abs_shift": 0.05941883333333333,
+      "edge_disagreement": 0.5031373333333333,
+      "switches": 0,
+      "prompt_tokens": 9320,
+      "completion_tokens": 1883,
+      "last_round_prompt_chars_mean": 1578.6666666666667
+    },
+    {
+      "run": "combined_11",
+      "condition": "combined",
+      "seed": 11,
+      "origin": "historical",
+      "status": "ok",
+      "memory_rounds": 1,
+      "include_initial_opinion": true,
+      "requests": 24,
+      "seconds": 76.73326850000012,
+      "initial_mean": -0.0034485000000000023,
+      "initial_variance": 0.29414669111191666,
+      "mean_opinion": 0.029901999999999995,
+      "variance": 0.3189236346866667,
+      "mean_abs_shift": 0.0710855,
+      "edge_disagreement": 0.5031373333333333,
+      "switches": 0,
+      "prompt_tokens": 9464,
+      "completion_tokens": 1732,
+      "last_round_prompt_chars_mean": 1456.6666666666667
+    },
+    {
+      "run": "peers_only_33",
+      "condition": "peers_only",
+      "seed": 33,
+      "origin": "new",
+      "status": "ok",
+      "memory_rounds": 1,
+      "include_initial_opinion": true,
+      "requests": 24,
+      "seconds": 75.46877370000584,
+      "initial_mean": 0.018385666666666675,
+      "initial_variance": 0.30736665429855553,
+      "mean_opinion": 0.014999999999999994,
+      "variance": 0.2740916666666667,
+      "mean_abs_shift": 0.05265033333333334,
+      "edge_disagreement": 0.4666666666666667,
+      "switches": 0,
+      "prompt_tokens": 9572,
+      "completion_tokens": 2028,
+      "last_round_prompt_chars_mean": 1645
+    },
+    {
+      "run": "combined_no_initial_11",
+      "condition": "combined_no_initial",
+      "seed": 11,
+      "origin": "new",
+      "status": "ok",
+      "memory_rounds": 1,
+      "include_initial_opinion": false,
+      "requests": 24,
+      "seconds": 77.11266230000183,
+      "initial_mean": -0.0034485000000000023,
+      "initial_variance": 0.29414669111191666,
+      "mean_opinion": 0.0015686666666666627,
+      "variance": 0.30083197024222225,
+      "mean_abs_shift": 0.04275216666666667,
+      "edge_disagreement": 0.5031373333333333,
+      "switches": 0,
+      "prompt_tokens": 9108,
+      "completion_tokens": 1772,
+      "last_round_prompt_chars_mean": 1518.1666666666667
+    },
+    {
+      "run": "news_only_33",
+      "condition": "news_only",
+      "seed": 33,
+      "origin": "new",
+      "status": "ok",
+      "memory_rounds": 1,
+      "include_initial_opinion": true,
+      "requests": 24,
+      "seconds": 76.62318850000156,
+      "initial_mean": 0.018385666666666675,
+      "initial_variance": 0.30736665429855553,
+      "mean_opinion": 0.01565100000000001,
+      "variance": 0.30827250836866665,
+      "mean_abs_shift": 0.002734666666666668,
+      "edge_disagreement": 0.530989,
+      "switches": 0,
+      "prompt_tokens": 5924,
+      "completion_tokens": 1731,
+      "last_round_prompt_chars_mean": 736.3333333333334
+    },
+    {
+      "run": "combined_33",
+      "condition": "combined",
+      "seed": 33,
+      "origin": "new",
+      "status": "ok",
+      "memory_rounds": 1,
+      "include_initial_opinion": true,
+      "requests": 24,
+      "seconds": 77.09799070000008,
+      "initial_mean": 0.018385666666666675,
+      "initial_variance": 0.30736665429855553,
+      "mean_opinion": 0.014342666666666662,
+      "variance": 0.2733489278492222,
+      "mean_abs_shift": 0.051698666666666664,
+      "edge_disagreement": 0.4666666666666667,
+      "switches": 0,
+      "prompt_tokens": 9686,
+      "completion_tokens": 1993,
+      "last_round_prompt_chars_mean": 1591.3333333333333
+    },
+    {
+      "run": "combined_memory4_11",
+      "condition": "combined_memory4",
+      "seed": 11,
+      "origin": "new",
+      "status": "ok",
+      "memory_rounds": 4,
+      "include_initial_opinion": true,
+      "requests": 24,
+      "seconds": 76.99370399999316,
+      "initial_mean": -0.0034485000000000023,
+      "initial_variance": 0.29414669111191666,
+      "mean_opinion": 0.018235333333333326,
+      "variance": 0.31050190357555557,
+      "mean_abs_shift": 0.05941883333333333,
+      "edge_disagreement": 0.5031373333333333,
+      "switches": 0,
+      "prompt_tokens": 14738,
+      "completion_tokens": 1787,
+      "last_round_prompt_chars_mean": 3167.6666666666665
+    },
+    {
+      "run": "peers_only_22",
+      "condition": "peers_only",
+      "seed": 22,
+      "origin": "new",
+      "status": "ok",
+      "memory_rounds": 1,
+      "include_initial_opinion": true,
+      "requests": 24,
+      "seconds": 76.52244019998761,
+      "initial_mean": 0.011108999999999985,
+      "initial_variance": 0.3289946912023333,
+      "mean_opinion": 0.0011896666666666583,
+      "variance": 0.30617622387822224,
+      "mean_abs_shift": 0.02206366666666666,
+      "edge_disagreement": 0.501393,
+      "switches": 0,
+      "prompt_tokens": 9236,
+      "completion_tokens": 1733,
+      "last_round_prompt_chars_mean": 1410.5
+    },
+    {
+      "run": "combined_22",
+      "condition": "combined",
+      "seed": 22,
+      "origin": "new",
+      "status": "ok",
+      "memory_rounds": 1,
+      "include_initial_opinion": true,
+      "requests": 24,
+      "seconds": 76.99079630000051,
+      "initial_mean": 0.011108999999999985,
+      "initial_variance": 0.3289946912023333,
+      "mean_opinion": 0.018552833333333327,
+      "variance": 0.2814524375534722,
+      "mean_abs_shift": 0.03942683333333333,
+      "edge_disagreement": 0.4666666666666667,
+      "switches": 0,
+      "prompt_tokens": 9200,
+      "completion_tokens": 1598,
+      "last_round_prompt_chars_mean": 1383.8333333333333
+    },
+    {
+      "run": "combined_memory4_no_initial_11",
+      "condition": "combined_memory4_no_initial",
+      "seed": 11,
+      "origin": "new",
+      "status": "ok",
+      "memory_rounds": 4,
+      "include_initial_opinion": false,
+      "requests": 24,
+      "seconds": 77.08787949998805,
+      "initial_mean": -0.0034485000000000023,
+      "initial_variance": 0.29414669111191666,
+      "mean_opinion": 0.0,
+      "variance": 0.2011,
+      "mean_abs_shift": 0.12098749999999998,
+      "edge_disagreement": 0.3466666666666667,
+      "switches": 0,
+      "prompt_tokens": 14531,
+      "completion_tokens": 1798,
+      "last_round_prompt_chars_mean": 3159.5
+    },
+    {
+      "run": "control_33",
+      "condition": "control",
+      "seed": 33,
+      "origin": "new",
+      "status": "ok",
+      "memory_rounds": 1,
+      "include_initial_opinion": true,
+      "requests": 24,
+      "seconds": 77.06692369999655,
+      "initial_mean": 0.018385666666666675,
+      "initial_variance": 0.30736665429855553,
+      "mean_opinion": 0.018182000000000007,
+      "variance": 0.3072129128116667,
+      "mean_abs_shift": 0.0002036666666666668,
+      "edge_disagreement": 0.530989,
+      "switches": 0,
+      "prompt_tokens": 5701,
+      "completion_tokens": 1835,
+      "last_round_prompt_chars_mean": 737.1666666666666
+    },
+    {
+      "run": "control_22",
+      "condition": "control",
+      "seed": 22,
+      "origin": "new",
+      "status": "ok",
+      "memory_rounds": 1,
+      "include_initial_opinion": true,
+      "requests": 24,
+      "seconds": 77.11854989999847,
+      "initial_mean": 0.011108999999999985,
+      "initial_variance": 0.3289946912023333,
+      "mean_opinion": 0.011371499999999984,
+      "variance": 0.3288676266335833,
+      "mean_abs_shift": 0.00026249999999999885,
+      "edge_disagreement": 0.533376,
+      "switches": 0,
+      "prompt_tokens": 5736,
+      "completion_tokens": 1851,
+      "last_round_prompt_chars_mean": 738.8333333333334
+    },
+    {
+      "run": "news_only_22",
+      "condition": "news_only",
+      "seed": 22,
+      "origin": "new",
+      "status": "ok",
+      "memory_rounds": 1,
+      "include_initial_opinion": true,
+      "requests": 24,
+      "seconds": 76.93654059999972,
+      "initial_mean": 0.011108999999999985,
+      "initial_variance": 0.3289946912023333,
+      "mean_opinion": 0.011371499999999984,
+      "variance": 0.3288676266335833,
+      "mean_abs_shift": 0.00026249999999999885,
+      "edge_disagreement": 0.533376,
+      "switches": 0,
+      "prompt_tokens": 5970,
+      "completion_tokens": 1817,
+      "last_round_prompt_chars_mean": 738.8333333333334
+    }
+  ],
+  "paired_profile_contrasts": [
+    {
+      "seed": 11,
+      "condition": "news_only",
+      "mean_minus_control": 0.038589000000000005,
+      "variance_minus_control": 0.0014957362053333312,
+      "abs_shift_minus_control": 0.038589,
+      "individual_final_abs_difference": 0.038589000000000005
+    },
+    {
+      "seed": 11,
+      "condition": "peers_only",
+      "mean_minus_control": 0.02102083333333334,
+      "variance_minus_control": 0.017572561204972248,
+      "abs_shift_minus_control": 0.058494500000000005,
+      "individual_final_abs_difference": 0.058494500000000005
+    },
+    {
+      "seed": 11,
+      "condition": "combined",
+      "mean_minus_control": 0.03268750000000001,
+      "variance_minus_control": 0.025994292316083356,
+      "abs_shift_minus_control": 0.07016116666666668,
+      "individual_final_abs_difference": 0.07016116666666668
+    },
+    {
+      "seed": 22,
+      "condition": "news_only",
+      "mean_minus_control": 0.0,
+      "variance_minus_control": 0.0,
+      "abs_shift_minus_control": 0.0,
+      "individual_final_abs_difference": 0.0
+    },
+    {
+      "seed": 22,
+      "condition": "peers_only",
+      "mean_minus_control": -0.010181833333333326,
+      "variance_minus_control": -0.02269140275536108,
+      "abs_shift_minus_control": 0.02180116666666666,
+      "individual_final_abs_difference": 0.02180116666666666
+    },
+    {
+      "seed": 22,
+      "condition": "combined",
+      "mean_minus_control": 0.007181333333333343,
+      "variance_minus_control": -0.04741518908011111,
+      "abs_shift_minus_control": 0.03916433333333333,
+      "individual_final_abs_difference": 0.03916433333333333
+    },
+    {
+      "seed": 33,
+      "condition": "news_only",
+      "mean_minus_control": -0.0025309999999999985,
+      "variance_minus_control": 0.0010595955569999704,
+      "abs_shift_minus_control": 0.002531000000000001,
+      "individual_final_abs_difference": 0.0025310000000000007
+    },
+    {
+      "seed": 33,
+      "condition": "peers_only",
+      "mean_minus_control": -0.003182000000000013,
+      "variance_minus_control": -0.033121246145000005,
+      "abs_shift_minus_control": 0.052446666666666676,
+      "individual_final_abs_difference": 0.052446666666666676
+    },
+    {
+      "seed": 33,
+      "condition": "combined",
+      "mean_minus_control": -0.0038393333333333456,
+      "variance_minus_control": -0.03386398496244447,
+      "abs_shift_minus_control": 0.051495,
+      "individual_final_abs_difference": 0.05178933333333334
+    }
+  ],
+  "aggregated_profile_contrasts": [
+    {
+      "condition": "news_only",
+      "profile_sets": 3,
+      "mean_minus_control": {
+        "mean": 0.012019333333333335,
+        "sd": 0.023044779893358354,
+        "min": -0.0025309999999999985,
+        "max": 0.038589000000000005,
+        "values": [
+          0.038589000000000005,
+          0.0,
+          -0.0025309999999999985
+        ]
+      },
+      "variance_minus_control": {
+        "mean": 0.0008517772541111005,
+        "sd": 0.0007692191067881412,
+        "min": 0.0,
+        "max": 0.0014957362053333312,
+        "values": [
+          0.0014957362053333312,
+          0.0,
+          0.0010595955569999704
+        ]
+      },
+      "abs_shift_minus_control": {
+        "mean": 0.013706666666666666,
+        "sd": 0.021585860518713015,
+        "min": 0.0,
+        "max": 0.038589,
+        "values": [
+          0.038589,
+          0.0,
+          0.002531000000000001
+        ]
+      },
+      "individual_final_abs_difference": {
+        "mean": 0.013706666666666669,
+        "sd": 0.02158586051871302,
+        "min": 0.0,
+        "max": 0.038589000000000005,
+        "values": [
+          0.038589000000000005,
+          0.0,
+          0.0025310000000000007
+        ]
+      }
+    },
+    {
+      "condition": "peers_only",
+      "profile_sets": 3,
+      "mean_minus_control": {
+        "mean": 0.0025523333333333335,
+        "sd": 0.01637264596395803,
+        "min": -0.010181833333333326,
+        "max": 0.02102083333333334,
+        "values": [
+          0.02102083333333334,
+          -0.010181833333333326,
+          -0.003182000000000013
+        ]
+      },
+      "variance_minus_control": {
+        "mean": -0.012746695898462945,
+        "sd": 0.02677010313318297,
+        "min": -0.033121246145000005,
+        "max": 0.017572561204972248,
+        "values": [
+          0.017572561204972248,
+          -0.02269140275536108,
+          -0.033121246145000005
+        ]
+      },
+      "abs_shift_minus_control": {
+        "mean": 0.04424744444444445,
+        "sd": 0.01967283943829195,
+        "min": 0.02180116666666666,
+        "max": 0.058494500000000005,
+        "values": [
+          0.058494500000000005,
+          0.02180116666666666,
+          0.052446666666666676
+        ]
+      },
+      "individual_final_abs_difference": {
+        "mean": 0.04424744444444445,
+        "sd": 0.01967283943829195,
+        "min": 0.02180116666666666,
+        "max": 0.058494500000000005,
+        "values": [
+          0.058494500000000005,
+          0.02180116666666666,
+          0.052446666666666676
+        ]
+      }
+    },
+    {
+      "condition": "combined",
+      "profile_sets": 3,
+      "mean_minus_control": {
+        "mean": 0.012009833333333336,
+        "sd": 0.01873601338406274,
+        "min": -0.0038393333333333456,
+        "max": 0.03268750000000001,
+        "values": [
+          0.03268750000000001,
+          0.007181333333333343,
+          -0.0038393333333333456
+        ]
+      },
+      "variance_minus_control": {
+        "mean": -0.018428293908824073,
+        "sd": 0.03906319762182389,
+        "min": -0.04741518908011111,
+        "max": 0.025994292316083356,
+        "values": [
+          0.025994292316083356,
+          -0.04741518908011111,
+          -0.03386398496244447
+        ]
+      },
+      "abs_shift_minus_control": {
+        "mean": 0.05360683333333333,
+        "sd": 0.01560595396617729,
+        "min": 0.03916433333333333,
+        "max": 0.07016116666666668,
+        "values": [
+          0.07016116666666668,
+          0.03916433333333333,
+          0.051495
+        ]
+      },
+      "individual_final_abs_difference": {
+        "mean": 0.05370494444444445,
+        "sd": 0.015586952672680142,
+        "min": 0.03916433333333333,
+        "max": 0.07016116666666668,
+        "values": [
+          0.07016116666666668,
+          0.03916433333333333,
+          0.05178933333333334
+        ]
+      }
+    }
+  ],
+  "individual_profile_contrasts": [
+    {
+      "seed": 11,
+      "condition": "news_only",
+      "agent": 0,
+      "role": "student",
+      "initial_opinion": -0.804762,
+      "control_final": -0.8,
+      "treatment_final": -0.75,
+      "treatment_minus_control": 0.050000000000000044
+    },
+    {
+      "seed": 11,
+      "condition": "news_only",
+      "agent": 1,
+      "role": "parent",
+      "initial_opinion": -0.457579,
+      "control_final": -0.457579,
+      "treatment_final": -0.457579,
+      "treatment_minus_control": 0.0
+    },
+    {
+      "seed": 11,
+      "condition": "news_only",
+      "agent": 2,
+      "role": "librarian",
+      "initial_opinion": -0.199216,
+      "control_final": -0.2,
+      "treatment_final": -0.2,
+      "treatment_minus_control": 0.0
+    },
+    {
+      "seed": 11,
+      "condition": "news_only",
+      "agent": 3,
+      "role": "teacher",
+      "initial_opinion": 0.168466,
+      "control_final": 0.168466,
+      "treatment_final": 0.35,
+      "treatment_minus_control": 0.18153399999999997
+    },
+    {
+      "seed": 11,
+      "condition": "news_only",
+      "agent": 4,
+      "role": "retiree",
+      "initial_opinion": 0.512988,
+      "control_final": 0.512988,
+      "treatment_final": 0.512988,
+      "treatment_minus_control": 0.0
+    },
+    {
+      "seed": 11,
+      "condition": "news_only",
+      "agent": 5,
+      "role": "developer",
+      "initial_opinion": 0.759412,
+      "control_final": 0.759412,
+      "treatment_final": 0.759412,
+      "treatment_minus_control": 0.0
+    },
+    {
+      "seed": 11,
+      "condition": "peers_only",
+      "agent": 0,
+      "role": "student",
+      "initial_opinion": -0.804762,
+      "control_final": -0.8,
+      "treatment_final": -0.75,
+      "treatment_minus_control": 0.050000000000000044
+    },
+    {
+      "seed": 11,
+      "condition": "peers_only",
+      "agent": 1,
+      "role": "parent",
+      "initial_opinion": -0.457579,
+      "control_final": -0.457579,
+      "treatment_final": -0.52,
+      "treatment_minus_control": -0.062421000000000004
+    },
+    {
+      "seed": 11,
+      "condition": "peers_only",
+      "agent": 2,
+      "role": "librarian",
+      "initial_opinion": -0.199216,
+      "control_final": -0.2,
+      "treatment_final": -0.25,
+      "treatment_minus_control": -0.04999999999999999
+    },
+    {
+      "seed": 11,
+      "condition": "peers_only",
+      "agent": 3,
+      "role": "teacher",
+      "initial_opinion": 0.168466,
+      "control_final": 0.168466,
+      "treatment_final": 0.35,
+      "treatment_minus_control": 0.18153399999999997
+    },
+    {
+      "seed": 11,
+      "condition": "peers_only",
+      "agent": 4,
+      "role": "retiree",
+      "initial_opinion": 0.512988,
+      "control_final": 0.512988,
+      "treatment_final": 0.52,
+      "treatment_minus_control": 0.007012000000000018
+    },
+    {
+      "seed": 11,
+      "condition": "peers_only",
+      "agent": 5,
+      "role": "developer",
+      "initial_opinion": 0.759412,
+      "control_final": 0.759412,
+      "treatment_final": 0.759412,
+      "treatment_minus_control": 0.0
+    },
+    {
+      "seed": 11,
+      "condition": "combined",
+      "agent": 0,
+      "role": "student",
+      "initial_opinion": -0.804762,
+      "control_final": -0.8,
+      "treatment_final": -0.75,
+      "treatment_minus_control": 0.050000000000000044
+    },
+    {
+      "seed": 11,
+      "condition": "combined",
+      "agent": 1,
+      "role": "parent",
+      "initial_opinion": -0.457579,
+      "control_final": -0.457579,
+      "treatment_final": -0.52,
+      "treatment_minus_control": -0.062421000000000004
+    },
+    {
+      "seed": 11,
+      "condition": "combined",
+      "agent": 2,
+      "role": "librarian",
+      "initial_opinion": -0.199216,
+      "control_final": -0.2,
+      "treatment_final": -0.25,
+      "treatment_minus_control": -0.04999999999999999
+    },
+    {
+      "seed": 11,
+      "condition": "combined",
+      "agent": 3,
+      "role": "teacher",
+      "initial_opinion": 0.168466,
+      "control_final": 0.168466,
+      "treatment_final": 0.42,
+      "treatment_minus_control": 0.251534
+    },
+    {
+      "seed": 11,
+      "condition": "combined",
+      "agent": 4,
+      "role": "retiree",
+      "initial_opinion": 0.512988,
+      "control_final": 0.512988,
+      "treatment_final": 0.52,
+      "treatment_minus_control": 0.007012000000000018
+    },
+    {
+      "seed": 11,
+      "condition": "combined",
+      "agent": 5,
+      "role": "developer",
+      "initial_opinion": 0.759412,
+      "control_final": 0.759412,
+      "treatment_final": 0.759412,
+      "treatment_minus_control": 0.0
+    },
+    {
+      "seed": 22,
+      "condition": "news_only",
+      "agent": 0,
+      "role": "student",
+      "initial_opinion": -0.754179,
+      "control_final": -0.754179,
+      "treatment_final": -0.754179,
+      "treatment_minus_control": 0.0
+    },
+    {
+      "seed": 22,
+      "condition": "news_only",
+      "agent": 1,
+      "role": "parent",
+      "initial_opinion": -0.547638,
+      "control_final": -0.547638,
+      "treatment_final": -0.547638,
+      "treatment_minus_control": 0.0
+    },
+    {
+      "seed": 22,
+      "condition": "news_only",
+      "agent": 2,
+      "role": "librarian",
+      "initial_opinion": -0.231575,
+      "control_final": -0.23,
+      "treatment_final": -0.23,
+      "treatment_minus_control": 0.0
+    },
+    {
+      "seed": 22,
+      "condition": "news_only",
+      "agent": 3,
+      "role": "teacher",
+      "initial_opinion": 0.215142,
+      "control_final": 0.215142,
+      "treatment_final": 0.215142,
+      "treatment_minus_control": 0.0
+    },
+    {
+      "seed": 22,
+      "condition": "news_only",
+      "agent": 4,
+      "role": "retiree",
+      "initial_opinion": 0.538955,
+      "control_final": 0.538955,
+      "treatment_final": 0.538955,
+      "treatment_minus_control": 0.0
+    },
+    {
+      "seed": 22,
+      "condition": "news_only",
+      "agent": 5,
+      "role": "developer",
+      "initial_opinion": 0.845949,
+      "control_final": 0.845949,
+      "treatment_final": 0.845949,
+      "treatment_minus_control": 0.0
+    },
+    {
+      "seed": 22,
+      "condition": "peers_only",
+      "agent": 0,
+      "role": "student",
+      "initial_opinion": -0.754179,
+      "control_final": -0.754179,
+      "treatment_final": -0.754179,
+      "treatment_minus_control": 0.0
+    },
+    {
+      "seed": 22,
+      "condition": "peers_only",
+      "agent": 1,
+      "role": "parent",
+      "initial_opinion": -0.547638,
+      "control_final": -0.547638,
+      "treatment_final": -0.547638,
+      "treatment_minus_control": 0.0
+    },
+    {
+      "seed": 22,
+      "condition": "peers_only",
+      "agent": 2,
+      "role": "librarian",
+      "initial_opinion": -0.231575,
+      "control_final": -0.23,
+      "treatment_final": -0.23,
+      "treatment_minus_control": 0.0
+    },
+    {
+      "seed": 22,
+      "condition": "peers_only",
+      "agent": 3,
+      "role": "teacher",
+      "initial_opinion": 0.215142,
+      "control_final": 0.215142,
+      "treatment_final": 0.25,
+      "treatment_minus_control": 0.034858
+    },
+    {
+      "seed": 22,
+      "condition": "peers_only",
+      "agent": 4,
+      "role": "retiree",
+      "initial_opinion": 0.538955,
+      "control_final": 0.538955,
+      "treatment_final": 0.538955,
+      "treatment_minus_control": 0.0
+    },
+    {
+      "seed": 22,
+      "condition": "peers_only",
+      "agent": 5,
+      "role": "developer",
+      "initial_opinion": 0.845949,
+      "control_final": 0.845949,
+      "treatment_final": 0.75,
+      "treatment_minus_control": -0.09594899999999995
+    },
+    {
+      "seed": 22,
+      "condition": "combined",
+      "agent": 0,
+      "role": "student",
+      "initial_opinion": -0.754179,
+      "control_final": -0.754179,
+      "treatment_final": -0.65,
+      "treatment_minus_control": 0.10417900000000002
+    },
+    {
+      "seed": 22,
+      "condition": "combined",
+      "agent": 1,
+      "role": "parent",
+      "initial_opinion": -0.547638,
+      "control_final": -0.547638,
+      "treatment_final": -0.547638,
+      "treatment_minus_control": 0.0
+    },
+    {
+      "seed": 22,
+      "condition": "combined",
+      "agent": 2,
+      "role": "librarian",
+      "initial_opinion": -0.231575,
+      "control_final": -0.23,
+      "treatment_final": -0.23,
+      "treatment_minus_control": 0.0
+    },
+    {
+      "seed": 22,
+      "condition": "combined",
+      "agent": 3,
+      "role": "teacher",
+      "initial_opinion": 0.215142,
+      "control_final": 0.215142,
+      "treatment_final": 0.25,
+      "treatment_minus_control": 0.034858
+    },
+    {
+      "seed": 22,
+      "condition": "combined",
+      "agent": 4,
+      "role": "retiree",
+      "initial_opinion": 0.538955,
+      "control_final": 0.538955,
+      "treatment_final": 0.538955,
+      "treatment_minus_control": 0.0
+    },
+    {
+      "seed": 22,
+      "condition": "combined",
+      "agent": 5,
+      "role": "developer",
+      "initial_opinion": 0.845949,
+      "control_final": 0.845949,
+      "treatment_final": 0.75,
+      "treatment_minus_control": -0.09594899999999995
+    },
+    {
+      "seed": 33,
+      "condition": "news_only",
+      "agent": 0,
+      "role": "student",
+      "initial_opinion": -0.792967,
+      "control_final": -0.792967,
+      "treatment_final": -0.792967,
+      "treatment_minus_control": 0.0
+    },
+    {
+      "seed": 33,
+      "condition": "news_only",
+      "agent": 1,
+      "role": "parent",
+      "initial_opinion": -0.4683,
+      "control_final": -0.4683,
+      "treatment_final": -0.4683,
+      "treatment_minus_control": 0.0
+    },
+    {
+      "seed": 33,
+      "condition": "news_only",
+      "agent": 2,
+      "role": "librarian",
+      "initial_opinion": -0.184814,
+      "control_final": -0.184814,
+      "treatment_final": -0.2,
+      "treatment_minus_control": -0.015186000000000005
+    },
+    {
+      "seed": 33,
+      "condition": "news_only",
+      "agent": 3,
+      "role": "teacher",
+      "initial_opinion": 0.240883,
+      "control_final": 0.24,
+      "treatment_final": 0.24,
+      "treatment_minus_control": 0.0
+    },
+    {
+      "seed": 33,
+      "condition": "news_only",
+      "agent": 4,
+      "role": "retiree",
+      "initial_opinion": 0.515173,
+      "control_final": 0.515173,
+      "treatment_final": 0.515173,
+      "treatment_minus_control": 0.0
+    },
+    {
+      "seed": 33,
+      "condition": "news_only",
+      "agent": 5,
+      "role": "developer",
+      "initial_opinion": 0.800339,
+      "control_final": 0.8,
+      "treatment_final": 0.8,
+      "treatment_minus_control": 0.0
+    },
+    {
+      "seed": 33,
+      "condition": "peers_only",
+      "agent": 0,
+      "role": "student",
+      "initial_opinion": -0.792967,
+      "control_final": -0.792967,
+      "treatment_final": -0.65,
+      "treatment_minus_control": 0.14296699999999996
+    },
+    {
+      "seed": 33,
+      "condition": "peers_only",
+      "agent": 1,
+      "role": "parent",
+      "initial_opinion": -0.4683,
+      "control_final": -0.4683,
+      "treatment_final": -0.52,
+      "treatment_minus_control": -0.051700000000000024
+    },
+    {
+      "seed": 33,
+      "condition": "peers_only",
+      "agent": 2,
+      "role": "librarian",
+      "initial_opinion": -0.184814,
+      "control_final": -0.184814,
+      "treatment_final": -0.25,
+      "treatment_minus_control": -0.065186
+    },
+    {
+      "seed": 33,
+      "condition": "peers_only",
+      "agent": 3,
+      "role": "teacher",
+      "initial_opinion": 0.240883,
+      "control_final": 0.24,
+      "treatment_final": 0.24,
+      "treatment_minus_control": 0.0
+    },
+    {
+      "seed": 33,
+      "condition": "peers_only",
+      "agent": 4,
+      "role": "retiree",
+      "initial_opinion": 0.515173,
+      "control_final": 0.515173,
+      "treatment_final": 0.52,
+      "treatment_minus_control": 0.004827000000000026
+    },
+    {
+      "seed": 33,
+      "condition": "peers_only",
+      "agent": 5,
+      "role": "developer",
+      "initial_opinion": 0.800339,
+      "control_final": 0.8,
+      "treatment_final": 0.75,
+      "treatment_minus_control": -0.050000000000000044
+    },
+    {
+      "seed": 33,
+      "condition": "combined",
+      "agent": 0,
+      "role": "student",
+      "initial_opinion": -0.792967,
+      "control_final": -0.792967,
+      "treatment_final": -0.65,
+      "treatment_minus_control": 0.14296699999999996
+    },
+    {
+      "seed": 33,
+      "condition": "combined",
+      "agent": 1,
+      "role": "parent",
+      "initial_opinion": -0.4683,
+      "control_final": -0.4683,
+      "treatment_final": -0.52,
+      "treatment_minus_control": -0.051700000000000024
+    },
+    {
+      "seed": 33,
+      "condition": "combined",
+      "agent": 2,
+      "role": "librarian",
+      "initial_opinion": -0.184814,
+      "control_final": -0.184814,
+      "treatment_final": -0.25,
+      "treatment_minus_control": -0.065186
+    },
+    {
+      "seed": 33,
+      "condition": "combined",
+      "agent": 3,
+      "role": "teacher",
+      "initial_opinion": 0.240883,
+      "control_final": 0.24,
+      "treatment_final": 0.240883,
+      "treatment_minus_control": 0.0008830000000000227
+    },
+    {
+      "seed": 33,
+      "condition": "combined",
+      "agent": 4,
+      "role": "retiree",
+      "initial_opinion": 0.515173,
+      "control_final": 0.515173,
+      "treatment_final": 0.515173,
+      "treatment_minus_control": 0.0
+    },
+    {
+      "seed": 33,
+      "condition": "combined",
+      "agent": 5,
+      "role": "developer",
+      "initial_opinion": 0.800339,
+      "control_final": 0.8,
+      "treatment_final": 0.75,
+      "treatment_minus_control": -0.050000000000000044
+    }
+  ],
+  "factorial_labels": {
+    "m1_anchor": "combined_11",
+    "m4_anchor": "combined_memory4_11",
+    "m1_no_anchor": "combined_no_initial_11",
+    "m4_no_anchor": "combined_memory4_no_initial_11"
+  },
+  "factorial_contrasts": {
+    "mean_opinion": {
+      "memory_effect_anchor": -0.011666666666666669,
+      "memory_effect_no_anchor": -0.0015686666666666627,
+      "remove_anchor_memory1": -0.028333333333333332,
+      "remove_anchor_memory4": -0.018235333333333326,
+      "interaction": 0.010098000000000006
+    },
+    "variance": {
+      "memory_effect_anchor": -0.008421731111111108,
+      "memory_effect_no_anchor": -0.09973197024222225,
+      "remove_anchor_memory1": -0.018091664444444433,
+      "remove_anchor_memory4": -0.10940190357555557,
+      "interaction": -0.09131023913111114
+    },
+    "mean_abs_shift": {
+      "memory_effect_anchor": -0.011666666666666665,
+      "memory_effect_no_anchor": 0.07823533333333332,
+      "remove_anchor_memory1": -0.02833333333333333,
+      "remove_anchor_memory4": 0.061568666666666653,
+      "interaction": 0.08990199999999998
+    },
+    "edge_disagreement": {
+      "memory_effect_anchor": 0.0,
+      "memory_effect_no_anchor": -0.15647066666666665,
+      "remove_anchor_memory1": 0.0,
+      "remove_anchor_memory4": -0.15647066666666665,
+      "interaction": -0.15647066666666665
+    }
+  },
+  "factorial_changed_agents": {
+    "m1_anchor": [],
+    "m4_anchor": [
+      {
+        "agent": 3,
+        "role": "teacher",
+        "difference": -0.07
+      }
+    ],
+    "m1_no_anchor": [
+      {
+        "agent": 3,
+        "role": "teacher",
+        "difference": -0.16999999999999998
+      }
+    ],
+    "m4_no_anchor": [
+      {
+        "agent": 0,
+        "role": "student",
+        "difference": 0.22999999999999998
+      },
+      {
+        "agent": 3,
+        "role": "teacher",
+        "difference": -0.16999999999999998
+      },
+      {
+        "agent": 5,
+        "role": "developer",
+        "difference": -0.23941199999999996
+      }
+    ]
+  },
+  "scope": "Three profile parameter sets; only one model and one prompt wording. Memory/anchor factorial uses seed11 only."
+}

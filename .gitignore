@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+
+.idea/
+.pytest_cache/
+artifacts/setup/matplotlib-cache/
+reports/qa/
+experiment_bundle.zip

@@ -1,0 +1,12 @@
+{
+  "requests": 102,
+  "valid_responses": 102,
+  "token_total": 40325,
+  "source_snapshot_verified": true,
+  "finish_reasons": "102 stop",
+  "secret_scan_files": 133,
+  "secret_leaks": 0,
+  "pdf_pages": 9,
+  "visual_qa": "All 9 pages inspected; no clipping or orphan pages",
+  "automated_tests_passed": 17
+}

@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-11-23T18:41:18.484836+00:00",
+  "model": "bonsai2-27b",
+  "base_url": "https://ftii.llm.actcognitive.org/v1",
+  "seed": 11,
+  "request_cap": 102,
+  "smoke_requests": 6,
+  "main_requests": 96,
+  "conditions": [
+    "control",
+    "news_only",
+    "peers_only",
+    "combined"
+  ],
+  "rounds": 4,
+  "agents": 6,
+  "generation": {
+    "temperature": "0",
+    "max_tokens": "300",
+    "thinking": "provider default; not explicitly enabled"
+  },
+  "gateway_limits_from_user": {
+    "rpm": 20,
+    "tpm": 100000,
+    "max_concurrent": 2
+  },
+  "runner_limits": {
+    "min_interval_seconds": 3.2,
+    "concurrent": 1,
+    "automatic_retries": 0
+  },
+  "source_sha256": {
+    "src\\__init__.py": "a184a83e8741b3c1567e12e1b3dad70c3d406c2f708eb6f49c6f66920fb0f6c1",
+    "src\\experiment.py": "bcbbf043036085db909cfeaa3611417e1da868cfdfb3e0d753c6814492ce4311",
+    "src\\models.py": "92b69b4cc2dd44d5807679cd38bf23f838efcfc889ff06b55cf8e0ffb6dc74aa",
+    "src\\policy.py": "34a1f720dbcae921bef608a25bb9ad28bfabfd7dacc7aa0390c3e507dd609179",
+    "tests\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests\\test_experiments.py": "88ed4826361b8fea91755967a4ff2f6ebce9ddf2d6a013ec8e3b0ae1e53b3425",
+    "scripts/run_live_pilot.py": "9da00221a56003992c362c6f05ed1e75c607f395f8bd4226d2fce1f44a22c274"
+  },
+  "interpretation": "Engineering pilot, one initial seed per condition; no statistical significance claims"
+}

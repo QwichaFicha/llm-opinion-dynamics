@@ -1,0 +1,17 @@
+{
+  "requests": 264,
+  "valid_responses": 264,
+  "total_tokens": 119345,
+  "runs": 11,
+  "paired_contrasts": 9,
+  "individual_contrasts": 54,
+  "all_visible_fields_and_memory_windows_verified": true,
+  "source_snapshot_verified": true,
+  "unit_tests_passed": 27,
+  "pdf_pages": 9,
+  "complete_report_pages": 43,
+  "new_report_all_pages_visually_inspected": true,
+  "merged_report_page_text_matches_source": true,
+  "secret_scan_files": 260,
+  "secret_leaks": 0
+}

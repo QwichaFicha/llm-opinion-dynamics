@@ -1,0 +1,9 @@
+{
+  "status": "ok",
+  "models": [
+    {
+      "id": "bonsai2-27b",
+      "owned_by": "openai"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "runs": 40,
+  "calls": 960,
+  "all_ok": true,
+  "all_baseline_equal": true
+}
