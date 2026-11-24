@@ -1,0 +1,11 @@
+{
+  "status": "stopped_on_error",
+  "calls": 11,
+  "completed": [
+    {
+      "run": "rotating_text",
+      "status": "error",
+      "calls": 11
+    }
+  ]
+}

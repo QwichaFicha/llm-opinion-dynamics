@@ -1,0 +1,23 @@
+{
+  "requested_model": "gpt-6-luna",
+  "exit_code": 0,
+  "seconds": 9.292739900003653,
+  "event_types": [
+    "thread.started",
+    "turn.started",
+    "item.completed",
+    "turn.completed"
+  ],
+  "usage": [
+    {
+      "input_tokens": 15473,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 71,
+      "reasoning_output_tokens": 23
+    }
+  ],
+  "tool_items": [],
+  "status": "ok",
+  "note": "A CLI turn is not guaranteed to equal one server-side inference request. Authentication was used in place, never copied."
+}

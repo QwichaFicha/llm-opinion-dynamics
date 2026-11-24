@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "calls": 60,
+  "completed": [
+    {
+      "run": "diagnostics",
+      "status": "ok",
+      "calls": 24
+    },
+    {
+      "run": "rotating_text",
+      "status": "ok",
+      "calls": 36
+    }
+  ],
+  "finished_utc": "2026-11-24T23:35:11.716480+00:00"
+}

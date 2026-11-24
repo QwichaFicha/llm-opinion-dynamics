@@ -1,0 +1,37 @@
+{
+  "status": "ok",
+  "calls": 204,
+  "completed": [
+    {
+      "run": "diagnostics",
+      "status": "ok",
+      "calls": 24
+    },
+    {
+      "run": "rotating_text",
+      "status": "ok",
+      "calls": 36
+    },
+    {
+      "run": "fixed_text",
+      "status": "ok",
+      "calls": 36
+    },
+    {
+      "run": "rotating_no_own",
+      "status": "ok",
+      "calls": 36
+    },
+    {
+      "run": "rotating_numeric",
+      "status": "ok",
+      "calls": 36
+    },
+    {
+      "run": "rotating_role_only",
+      "status": "ok",
+      "calls": 36
+    }
+  ],
+  "finished_utc": "2026-11-24T23:21:38.492259+00:00"
+}

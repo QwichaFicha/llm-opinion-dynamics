@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-25",
+  "new_bonsai_http_calls": 251,
+  "new_codex_cli_invocations": 97,
+  "historical_bonsai_http_calls": 534,
+  "historical_bonsai_total_tokens": 217405,
+  "bonsai_new_usage": {
+    "input_tokens": 230014,
+    "output_tokens": 50422,
+    "cached_input_tokens": 0,
+    "reasoning_output_tokens": 0
+  },
+  "codex_new_usage_including_probe": {
+    "input_tokens": 1557991,
+    "output_tokens": 14629,
+    "cached_input_tokens": 894464,
+    "reasoning_output_tokens": 730
+  },
+  "runs": [
+    {
+      "folder": "artifacts/runs/deliberation_bonsai_2026-11-25_v1",
+      "backend": "bonsai",
+      "status": "ok",
+      "calls": 204,
+      "usage": {
+        "input_tokens": 202545,
+        "output_tokens": 41248,
+        "cached_input_tokens": 0,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "folder": "artifacts/runs/deliberation_bonsai_diagnostics_2026-11-25_v2",
+      "backend": "bonsai",
+      "status": "ok",
+      "calls": 24,
+      "usage": {
+        "input_tokens": 12902,
+        "output_tokens": 4559,
+        "cached_input_tokens": 0,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "folder": "artifacts/runs/deliberation_bonsai_smoke_2026-11-25_v1",
+      "backend": "bonsai",
+      "status": "stopped_on_error",
+      "calls": 11,
+      "usage": {
+        "input_tokens": 6888,
+        "output_tokens": 2208,
+        "cached_input_tokens": 0,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "folder": "artifacts/runs/deliberation_bonsai_smoke_2026-11-25_v2",
+      "backend": "bonsai",
+      "status": "ok",
+      "calls": 12,
+      "usage": {
+        "input_tokens": 7679,
+        "output_tokens": 2407,
+        "cached_input_tokens": 0,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "folder": "artifacts/runs/deliberation_luna_2026-11-25_v1",
+      "backend": "codex",
+      "status": "ok",
+      "calls": 60,
+      "usage": {
+        "input_tokens": 968001,
+        "output_tokens": 9401,
+        "cached_input_tokens": 549632,
+        "reasoning_output_tokens": 636
+      }
+    },
+    {
+      "folder": "artifacts/runs/deliberation_luna_diagnostics_2026-11-25_v2",
+      "backend": "codex",
+      "status": "ok",
+      "calls": 24,
+      "usage": {
+        "input_tokens": 382654,
+        "output_tokens": 3435,
+        "cached_input_tokens": 318336,
+        "reasoning_output_tokens": 71
+      }
+    },
+    {
+      "folder": "artifacts/runs/deliberation_luna_smoke_2026-11-25_v1",
+      "backend": "codex",
+      "status": "ok",
+      "calls": 12,
+      "usage": {
+        "input_tokens": 191863,
+        "output_tokens": 1722,
+        "cached_input_tokens": 26496,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ],
+  "probe_invocations": 1,
+  "note": "Includes failed initial smoke and all subsequent launches. Checkpoints and source snapshots are not separate calls. CLI usage includes service context and is not a direct API bill."
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-25",
+  "unit_tests_passed": 36,
+  "browser_checks_per_viewport": 17,
+  "viewports_css_px": [
+    1280,
+    420
+  ],
+  "browser_screenshots_visually_reviewed": true,
+  "standalone_demo_completed_cases": 6,
+  "pdf_pages": 5,
+  "pdf_all_pages_visually_reviewed": true,
+  "source_snapshot_hashes_verified": 294,
+  "experiment_manifest_hashes_verified": 371,
+  "publication_secret_matches": 0,
+  "private_files_in_publication_set": 0,
+  "selected_manual_review_quotes_verified": 8,
+  "bonsai_rotating_fixed_numeric_trajectories_equal": true,
+  "unexpected_codex_tool_items": 0,
+  "new_bonsai_http_calls": 251,
+  "new_codex_cli_invocations": 97,
+  "note": "Includes all failed/successful smoke runs and corrected diagnostics; checkpoint copies are not additional calls. CLI invocations and API requests are not interchangeable."
+}

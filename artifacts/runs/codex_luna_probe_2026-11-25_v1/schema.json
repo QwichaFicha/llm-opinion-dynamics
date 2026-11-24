@@ -1,0 +1,1 @@
+{"type": "object", "properties": {"opinion": {"type": "number"}, "message": {"type": "string"}}, "required": ["opinion", "message"], "additionalProperties": false}

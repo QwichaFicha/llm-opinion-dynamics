@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-25",
+  "method": "Assistant inspection of preserved responses against explicit fictional facts and participant profiles. Selected counterexamples, not an exhaustive independent human evaluation.",
+  "entries": [
+    {
+      "source": "artifacts/runs/deliberation_bonsai_2026-11-25_v1/rotating_text.json",
+      "agent": 2,
+      "round": 2,
+      "issue": "budget_contradiction",
+      "quote": "Although the cost is higher than printed books, it remains within my annual budget of 100 units.",
+      "check": "The same answer reports digital_cost=120, while this student's stated budget is 100. 120 exceeds 100."
+    },
+    {
+      "source": "artifacts/runs/deliberation_bonsai_2026-11-25_v1/rotating_text.json",
+      "agent": 0,
+      "round": 3,
+      "issue": "cost_order_contradiction",
+      "quote": "Printed books remain the practical option: they work offline, cost less per resident (80 vs 40)",
+      "check": "The answer correctly extracts digital_cost=40 and printed_cost=80 in beliefs, but incorrectly calls printed books cheaper."
+    },
+    {
+      "source": "artifacts/runs/deliberation_bonsai_2026-11-25_v1/rotating_text.json",
+      "agent": 4,
+      "round": 3,
+      "issue": "cost_order_contradiction",
+      "quote": "this does not change the cost advantage of print (80 vs 40 budget units)",
+      "check": "40 digital units are less than 80 printed units, so the asserted print cost advantage contradicts the supplied facts and the same answer's beliefs."
+    },
+    {
+      "source": "artifacts/runs/deliberation_bonsai_2026-11-25_v1/rotating_text.json",
+      "agent": 0,
+      "round": 5,
+      "issue": "unsupported_personal_detail",
+      "quote": "provide screen-free reading time I need with my children",
+      "check": "Agent 0 is the retiree profile, which specifies no children or shared reading time. This need belongs to the parent profile. The claim is unsupported by this agent's supplied biography."
+    },
+    {
+      "source": "artifacts/runs/deliberation_luna_2026-11-25_v1/rotating_text.json",
+      "agent": 2,
+      "round": 2,
+      "issue": "correct_budget_comparison",
+      "quote": "BASE_COST puts digital above my budget while print stays within it",
+      "check": "Student: digital 120 exceeds budget 100; printed 80 fits. This correctly addresses the counterexample seen in the other route.",
+      "assessment": "selected_positive_example"
+    },
+    {
+      "source": "artifacts/runs/deliberation_luna_2026-11-25_v1/rotating_text.json",
+      "agent": 2,
+      "round": 3,
+      "issue": "correct_relevant_fact_update",
+      "quote": "The peer's 120-unit figure is outdated; the facade change is irrelevant.",
+      "check": "Student moves to digital at cost 40 after acknowledging offline access, and identifies the peer figure as obsolete.",
+      "assessment": "selected_positive_example"
+    },
+    {
+      "source": "artifacts/runs/deliberation_luna_2026-11-25_v1/rotating_text.json",
+      "agent": 2,
+      "round": 4,
+      "issue": "correct_retraction_and_budget",
+      "quote": "E4 corrects the price to 140 units, over budget; print remains 80.",
+      "check": "Student moves back to print after the official correction; 140 exceeds the 100-unit budget.",
+      "assessment": "selected_positive_example"
+    },
+    {
+      "source": "artifacts/runs/deliberation_luna_2026-11-25_v1/rotating_text.json",
+      "agent": 4,
+      "round": 3,
+      "issue": "acknowledges_cost_without_forced_opinion_change",
+      "quote": "digital is the lower-cost option while print remains my choice for inclusive service",
+      "check": "Librarian correctly acknowledges 40 < 80 while retaining a preference on another criterion. Keeping the same opinion is not automatically a failure.",
+      "assessment": "selected_positive_example"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-25",
+  "cli_version": "0.171.0-alpha.13.2",
+  "requested_model": "gpt-6-luna",
+  "model_present_in_local_model_cache": true,
+  "authentication": "Existing user login, used normally by Codex; the assistant did not inspect or export credential-file contents",
+  "invocation_options": ["exec", "--ignore-user-config", "--ephemeral", "--skip-git-repo-check", "--sandbox read-only", "--model gpt-6-luna", "--json", "--output-schema"],
+  "tool_use_policy": "Prompt requests no tools; adapter stops if output contains unexpected tool items",
+  "limitations": [
+    "Requested model ID is recorded, exact weights or server revision are not independently verified",
+    "Outer Codex system instructions and sampling settings differ from the direct gateway route",
+    "CLI invocations may involve internal retries and are not equivalent to a count of HTTP inference requests",
+    "Usage includes Codex service context; account quota and monetary price were not determined"
+  ]
+}

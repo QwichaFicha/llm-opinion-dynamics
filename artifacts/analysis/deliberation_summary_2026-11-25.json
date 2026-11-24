@@ -1,0 +1,1049 @@
+{
+  "date": "2026-11-25",
+  "new_model_calls": 0,
+  "note": "Knowledge extraction checks are mechanical. Evidence citation alone does not prove understanding. CLI and direct API routes differ.",
+  "studies": [
+    {
+      "folder": "artifacts/runs/deliberation_bonsai_2026-11-25_v1",
+      "backend": "bonsai",
+      "provider": {
+        "model": "bonsai2-27b",
+        "base_url": "https://ftii.llm.actcognitive.org/v1",
+        "max_tokens": 600,
+        "temperature": 0
+      },
+      "runs": [
+        {
+          "file": "rotating_text.json",
+          "status": "ok",
+          "config": {
+            "name": "rotating_text",
+            "seed": 41,
+            "rounds": 5,
+            "partner_mode": "rotating",
+            "own_history": true,
+            "peer_numbers": false,
+            "rich_profiles": true,
+            "events": true
+          },
+          "calls": 36,
+          "usage": {
+            "input_tokens": 41806,
+            "output_tokens": 7454,
+            "cached_input_tokens": 0,
+            "reasoning_output_tokens": 0
+          },
+          "seconds": 144.10186099997372,
+          "unique_pairs": 15,
+          "pair_slots": 15,
+          "rounds": [
+            {
+              "round": 0,
+              "mean_opinion": -0.3333333333333333,
+              "variance": 0.8888888888888888,
+              "mean_abs_step": null,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": false,
+                "digital_cost": 120,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 0,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 0,
+              "unchanged_opinions": null
+            },
+            {
+              "round": 1,
+              "mean_opinion": 0,
+              "variance": 1,
+              "mean_abs_step": 0.3333333333333333,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 120,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 0,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 1,
+              "unchanged_opinions": 5
+            },
+            {
+              "round": 2,
+              "mean_opinion": 0,
+              "variance": 1,
+              "mean_abs_step": 0,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 120,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 2,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 1,
+              "unchanged_opinions": 6
+            },
+            {
+              "round": 3,
+              "mean_opinion": 0,
+              "variance": 1,
+              "mean_abs_step": 0,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 40,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 1,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 1,
+              "unchanged_opinions": 6
+            },
+            {
+              "round": 4,
+              "mean_opinion": -0.3333333333333333,
+              "variance": 0.8888888888888888,
+              "mean_abs_step": 0.3333333333333333,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 140,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 1,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 0,
+              "unchanged_opinions": 5
+            },
+            {
+              "round": 5,
+              "mean_opinion": -0.6666666666666666,
+              "variance": 0.5555555555555556,
+              "mean_abs_step": 0.3333333333333333,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 140,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 1,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 0,
+              "unchanged_opinions": 5
+            }
+          ],
+          "beliefs_correct": 36,
+          "beliefs_total": 36,
+          "verbatim_own_repeats": 5,
+          "verbatim_peer_matches": 0,
+          "answers_exceeding_requested_length": 3,
+          "late_unchanged_opinions": 22,
+          "late_agent_steps": 24
+        },
+        {
+          "file": "fixed_text.json",
+          "status": "ok",
+          "config": {
+            "name": "fixed_text",
+            "seed": 41,
+            "rounds": 5,
+            "partner_mode": "fixed",
+            "own_history": true,
+            "peer_numbers": false,
+            "rich_profiles": true,
+            "events": true
+          },
+          "calls": 36,
+          "usage": {
+            "input_tokens": 41607,
+            "output_tokens": 7259,
+            "cached_input_tokens": 0,
+            "reasoning_output_tokens": 0
+          },
+          "seconds": 144.127273399994,
+          "unique_pairs": 3,
+          "pair_slots": 15,
+          "rounds": [
+            {
+              "round": 0,
+              "mean_opinion": -0.3333333333333333,
+              "variance": 0.8888888888888888,
+              "mean_abs_step": null,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": false,
+                "digital_cost": 120,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 0,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 0,
+              "unchanged_opinions": null
+            },
+            {
+              "round": 1,
+              "mean_opinion": 0,
+              "variance": 1,
+              "mean_abs_step": 0.3333333333333333,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 120,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 0,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 1,
+              "unchanged_opinions": 5
+            },
+            {
+              "round": 2,
+              "mean_opinion": 0,
+              "variance": 1,
+              "mean_abs_step": 0,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 120,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 3,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 1,
+              "unchanged_opinions": 6
+            },
+            {
+              "round": 3,
+              "mean_opinion": 0,
+              "variance": 1,
+              "mean_abs_step": 0,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 40,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 4,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 1,
+              "unchanged_opinions": 6
+            },
+            {
+              "round": 4,
+              "mean_opinion": -0.3333333333333333,
+              "variance": 0.8888888888888888,
+              "mean_abs_step": 0.3333333333333333,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 140,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 2,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 0,
+              "unchanged_opinions": 5
+            },
+            {
+              "round": 5,
+              "mean_opinion": -0.6666666666666666,
+              "variance": 0.5555555555555556,
+              "mean_abs_step": 0.3333333333333333,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 140,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 1,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 0,
+              "unchanged_opinions": 5
+            }
+          ],
+          "beliefs_correct": 36,
+          "beliefs_total": 36,
+          "verbatim_own_repeats": 10,
+          "verbatim_peer_matches": 0,
+          "answers_exceeding_requested_length": 3,
+          "late_unchanged_opinions": 22,
+          "late_agent_steps": 24
+        },
+        {
+          "file": "rotating_no_own.json",
+          "status": "ok",
+          "config": {
+            "name": "rotating_no_own",
+            "seed": 41,
+            "rounds": 5,
+            "partner_mode": "rotating",
+            "own_history": false,
+            "peer_numbers": false,
+            "rich_profiles": true,
+            "events": true
+          },
+          "calls": 36,
+          "usage": {
+            "input_tokens": 25138,
+            "output_tokens": 7186,
+            "cached_input_tokens": 0,
+            "reasoning_output_tokens": 0
+          },
+          "seconds": 126.24708840000676,
+          "unique_pairs": 15,
+          "pair_slots": 15,
+          "rounds": [
+            {
+              "round": 0,
+              "mean_opinion": -0.3333333333333333,
+              "variance": 0.8888888888888888,
+              "mean_abs_step": null,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": false,
+                "digital_cost": 120,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 0,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 1,
+              "unchanged_opinions": null
+            },
+            {
+              "round": 1,
+              "mean_opinion": 0,
+              "variance": 1,
+              "mean_abs_step": 0.3333333333333333,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 120,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 0,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 0,
+              "unchanged_opinions": 5
+            },
+            {
+              "round": 2,
+              "mean_opinion": 0,
+              "variance": 1,
+              "mean_abs_step": 0,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 120,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 0,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 0,
+              "unchanged_opinions": 6
+            },
+            {
+              "round": 3,
+              "mean_opinion": 0.6666666666666666,
+              "variance": 0.5555555555555556,
+              "mean_abs_step": 0.6666666666666666,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 40,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 0,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 0,
+              "unchanged_opinions": 4
+            },
+            {
+              "round": 4,
+              "mean_opinion": -0.3333333333333333,
+              "variance": 0.8888888888888888,
+              "mean_abs_step": 1,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 140,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 0,
+              "verbatim_peer_matches": 2,
+              "answers_exceeding_requested_length": 0,
+              "unchanged_opinions": 3
+            },
+            {
+              "round": 5,
+              "mean_opinion": -0.6666666666666666,
+              "variance": 0.5555555555555556,
+              "mean_abs_step": 0.3333333333333333,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 140,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 0,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 0,
+              "unchanged_opinions": 5
+            }
+          ],
+          "beliefs_correct": 36,
+          "beliefs_total": 36,
+          "verbatim_own_repeats": 0,
+          "verbatim_peer_matches": 2,
+          "answers_exceeding_requested_length": 1,
+          "late_unchanged_opinions": 18,
+          "late_agent_steps": 24
+        },
+        {
+          "file": "rotating_numeric.json",
+          "status": "ok",
+          "config": {
+            "name": "rotating_numeric",
+            "seed": 41,
+            "rounds": 5,
+            "partner_mode": "rotating",
+            "own_history": true,
+            "peer_numbers": true,
+            "rich_profiles": true,
+            "events": true
+          },
+          "calls": 36,
+          "usage": {
+            "input_tokens": 42005,
+            "output_tokens": 7451,
+            "cached_input_tokens": 0,
+            "reasoning_output_tokens": 0
+          },
+          "seconds": 143.947313200013,
+          "unique_pairs": 15,
+          "pair_slots": 15,
+          "rounds": [
+            {
+              "round": 0,
+              "mean_opinion": -0.3333333333333333,
+              "variance": 0.8888888888888888,
+              "mean_abs_step": null,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": false,
+                "digital_cost": 120,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 0,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 0,
+              "unchanged_opinions": null
+            },
+            {
+              "round": 1,
+              "mean_opinion": 0,
+              "variance": 1,
+              "mean_abs_step": 0.3333333333333333,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 120,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 0,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 1,
+              "unchanged_opinions": 5
+            },
+            {
+              "round": 2,
+              "mean_opinion": 0,
+              "variance": 1,
+              "mean_abs_step": 0,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 120,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 3,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 1,
+              "unchanged_opinions": 6
+            },
+            {
+              "round": 3,
+              "mean_opinion": 0,
+              "variance": 1,
+              "mean_abs_step": 0,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 40,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 1,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 1,
+              "unchanged_opinions": 6
+            },
+            {
+              "round": 4,
+              "mean_opinion": -0.3333333333333333,
+              "variance": 0.8888888888888888,
+              "mean_abs_step": 0.3333333333333333,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 140,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 0,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 0,
+              "unchanged_opinions": 5
+            },
+            {
+              "round": 5,
+              "mean_opinion": -0.6666666666666666,
+              "variance": 0.5555555555555556,
+              "mean_abs_step": 0.3333333333333333,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 140,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 1,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 0,
+              "unchanged_opinions": 5
+            }
+          ],
+          "beliefs_correct": 36,
+          "beliefs_total": 36,
+          "verbatim_own_repeats": 5,
+          "verbatim_peer_matches": 0,
+          "answers_exceeding_requested_length": 3,
+          "late_unchanged_opinions": 22,
+          "late_agent_steps": 24
+        },
+        {
+          "file": "rotating_role_only.json",
+          "status": "ok",
+          "config": {
+            "name": "rotating_role_only",
+            "seed": 41,
+            "rounds": 5,
+            "partner_mode": "rotating",
+            "own_history": true,
+            "peer_numbers": false,
+            "rich_profiles": false,
+            "events": true
+          },
+          "calls": 36,
+          "usage": {
+            "input_tokens": 39087,
+            "output_tokens": 7208,
+            "cached_input_tokens": 0,
+            "reasoning_output_tokens": 0
+          },
+          "seconds": 141.31798750002054,
+          "unique_pairs": 15,
+          "pair_slots": 15,
+          "rounds": [
+            {
+              "round": 0,
+              "mean_opinion": -1,
+              "variance": 0,
+              "mean_abs_step": null,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": false,
+                "digital_cost": 120,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 0,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 0,
+              "unchanged_opinions": null
+            },
+            {
+              "round": 1,
+              "mean_opinion": -1,
+              "variance": 0,
+              "mean_abs_step": 0,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 120,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 0,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 0,
+              "unchanged_opinions": 6
+            },
+            {
+              "round": 2,
+              "mean_opinion": -1,
+              "variance": 0,
+              "mean_abs_step": 0,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 120,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 0,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 0,
+              "unchanged_opinions": 6
+            },
+            {
+              "round": 3,
+              "mean_opinion": -1,
+              "variance": 0,
+              "mean_abs_step": 0,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 40,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 0,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 0,
+              "unchanged_opinions": 6
+            },
+            {
+              "round": 4,
+              "mean_opinion": -1,
+              "variance": 0,
+              "mean_abs_step": 0,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 140,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 0,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 0,
+              "unchanged_opinions": 6
+            },
+            {
+              "round": 5,
+              "mean_opinion": -1,
+              "variance": 0,
+              "mean_abs_step": 0,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 140,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 2,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 0,
+              "unchanged_opinions": 6
+            }
+          ],
+          "beliefs_correct": 36,
+          "beliefs_total": 36,
+          "verbatim_own_repeats": 2,
+          "verbatim_peer_matches": 0,
+          "answers_exceeding_requested_length": 0,
+          "late_unchanged_opinions": 24,
+          "late_agent_steps": 24
+        }
+      ],
+      "diagnostics": {
+        "status": "ok",
+        "cases": 24,
+        "calls": 24,
+        "beliefs_correct": 24,
+        "cases_with_unknown_citations": 0,
+        "answers_exceeding_requested_length": 0,
+        "by_variant": {
+          "none": {
+            "correct": 6,
+            "total": 6
+          },
+          "relevant": {
+            "correct": 6,
+            "total": 6
+          },
+          "irrelevant": {
+            "correct": 6,
+            "total": 6
+          },
+          "correction": {
+            "correct": 6,
+            "total": 6
+          }
+        },
+        "paired_irrelevant_opinion_changes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "usage": {
+          "input_tokens": 12902,
+          "output_tokens": 4690,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": 0
+        }
+      },
+      "calls": 204,
+      "usage": {
+        "input_tokens": 202545,
+        "output_tokens": 41248,
+        "cached_input_tokens": 0,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "folder": "artifacts/runs/deliberation_luna_2026-11-25_v1",
+      "backend": "codex",
+      "provider": {
+        "requested_model": "gpt-6-luna",
+        "route": "Codex exec, ephemeral read-only, no tools",
+        "caveat": "CLI invocations, not a direct API comparison; Codex system context and sampling differ."
+      },
+      "runs": [
+        {
+          "file": "rotating_text.json",
+          "status": "ok",
+          "config": {
+            "name": "rotating_text",
+            "seed": 41,
+            "rounds": 5,
+            "partner_mode": "rotating",
+            "own_history": true,
+            "peer_numbers": false,
+            "rich_profiles": true,
+            "events": true
+          },
+          "calls": 36,
+          "usage": {
+            "input_tokens": 589671,
+            "output_tokens": 6010,
+            "cached_input_tokens": 351360,
+            "reasoning_output_tokens": 636
+          },
+          "seconds": 387.30082219999167,
+          "unique_pairs": 15,
+          "pair_slots": 15,
+          "rounds": [
+            {
+              "round": 0,
+              "mean_opinion": -0.5333333333333333,
+              "variance": 0.5055555555555555,
+              "mean_abs_step": null,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": false,
+                "digital_cost": 120,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 0,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 0,
+              "unchanged_opinions": null
+            },
+            {
+              "round": 1,
+              "mean_opinion": -0.5,
+              "variance": 0.5133333333333333,
+              "mean_abs_step": 0.03333333333333333,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 120,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 0,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 0,
+              "unchanged_opinions": 5
+            },
+            {
+              "round": 2,
+              "mean_opinion": -0.5,
+              "variance": 0.5133333333333333,
+              "mean_abs_step": 0.0,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 120,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 0,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 0,
+              "unchanged_opinions": 6
+            },
+            {
+              "round": 3,
+              "mean_opinion": -0.06666666666666667,
+              "variance": 0.7588888888888888,
+              "mean_abs_step": 0.43333333333333335,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 40,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 0,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 0,
+              "unchanged_opinions": 4
+            },
+            {
+              "round": 4,
+              "mean_opinion": -0.5,
+              "variance": 0.5133333333333333,
+              "mean_abs_step": 0.43333333333333335,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 140,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 0,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 0,
+              "unchanged_opinions": 4
+            },
+            {
+              "round": 5,
+              "mean_opinion": -0.5,
+              "variance": 0.5133333333333333,
+              "mean_abs_step": 0.0,
+              "beliefs_correct": 6,
+              "belief_targets": {
+                "digital_offline": true,
+                "digital_cost": 140,
+                "printed_cost": 80
+              },
+              "unknown_citation_count": 0,
+              "verbatim_own_repeats": 0,
+              "verbatim_peer_matches": 0,
+              "answers_exceeding_requested_length": 0,
+              "unchanged_opinions": 6
+            }
+          ],
+          "beliefs_correct": 36,
+          "beliefs_total": 36,
+          "verbatim_own_repeats": 0,
+          "verbatim_peer_matches": 0,
+          "answers_exceeding_requested_length": 0,
+          "late_unchanged_opinions": 20,
+          "late_agent_steps": 24
+        }
+      ],
+      "diagnostics": {
+        "status": "ok",
+        "cases": 24,
+        "calls": 24,
+        "beliefs_correct": 24,
+        "cases_with_unknown_citations": 0,
+        "answers_exceeding_requested_length": 0,
+        "by_variant": {
+          "none": {
+            "correct": 6,
+            "total": 6
+          },
+          "relevant": {
+            "correct": 6,
+            "total": 6
+          },
+          "irrelevant": {
+            "correct": 6,
+            "total": 6
+          },
+          "correction": {
+            "correct": 6,
+            "total": 6
+          }
+        },
+        "paired_irrelevant_opinion_changes": [
+          0,
+          0,
+          0,
+          0.4,
+          0.6,
+          -1.5
+        ],
+        "usage": {
+          "input_tokens": 378330,
+          "output_tokens": 3391,
+          "cached_input_tokens": 198272,
+          "reasoning_output_tokens": 0
+        }
+      },
+      "calls": 60,
+      "usage": {
+        "input_tokens": 968001,
+        "output_tokens": 9401,
+        "cached_input_tokens": 549632,
+        "reasoning_output_tokens": 636
+      }
+    },
+    {
+      "folder": "artifacts/runs/deliberation_bonsai_diagnostics_2026-11-25_v2",
+      "backend": "bonsai",
+      "provider": {
+        "model": "bonsai2-27b",
+        "base_url": "https://ftii.llm.actcognitive.org/v1",
+        "max_tokens": 600,
+        "temperature": 0
+      },
+      "runs": [],
+      "diagnostics": {
+        "status": "ok",
+        "cases": 24,
+        "calls": 24,
+        "beliefs_correct": 24,
+        "cases_with_unknown_citations": 0,
+        "answers_exceeding_requested_length": 0,
+        "by_variant": {
+          "none": {
+            "correct": 6,
+            "total": 6
+          },
+          "relevant": {
+            "correct": 6,
+            "total": 6
+          },
+          "irrelevant": {
+            "correct": 6,
+            "total": 6
+          },
+          "correction": {
+            "correct": 6,
+            "total": 6
+          }
+        },
+        "paired_irrelevant_opinion_changes": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        "usage": {
+          "input_tokens": 12902,
+          "output_tokens": 4559,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": 0
+        }
+      },
+      "calls": 24,
+      "usage": {
+        "input_tokens": 12902,
+        "output_tokens": 4559,
+        "cached_input_tokens": 0,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "folder": "artifacts/runs/deliberation_luna_diagnostics_2026-11-25_v2",
+      "backend": "codex",
+      "provider": {
+        "requested_model": "gpt-6-luna",
+        "route": "Codex exec, ephemeral read-only, no tools",
+        "caveat": "CLI invocations, not a direct API comparison; Codex system context and sampling differ."
+      },
+      "runs": [],
+      "diagnostics": {
+        "status": "ok",
+        "cases": 24,
+        "calls": 24,
+        "beliefs_correct": 24,
+        "cases_with_unknown_citations": 0,
+        "answers_exceeding_requested_length": 0,
+        "by_variant": {
+          "none": {
+            "correct": 6,
+            "total": 6
+          },
+          "relevant": {
+            "correct": 6,
+            "total": 6
+          },
+          "irrelevant": {
+            "correct": 6,
+            "total": 6
+          },
+          "correction": {
+            "correct": 6,
+            "total": 6
+          }
+        },
+        "paired_irrelevant_opinion_changes": [
+          0.19999999999999996,
+          0,
+          -0.30000000000000004,
+          0.19999999999999996,
+          0,
+          0.8
+        ],
+        "usage": {
+          "input_tokens": 382654,
+          "output_tokens": 3435,
+          "cached_input_tokens": 318336,
+          "reasoning_output_tokens": 71
+        }
+      },
+      "calls": 24,
+      "usage": {
+        "input_tokens": 382654,
+        "output_tokens": 3435,
+        "cached_input_tokens": 318336,
+        "reasoning_output_tokens": 71
+      }
+    }
+  ]
+}

@@ -1,0 +1,546 @@
+{
+  "date": "2026-11-25",
+  "new_api_requests": 0,
+  "scope": "15 recorded cases, without exact repeat runs; control excluded from active summaries. Not independent human or model samples.",
+  "active_runs": {
+    "runs": 12,
+    "late_agent_steps": 216,
+    "late_unchanged_opinions": 185,
+    "late_verbatim_own_message_repeats": 22,
+    "late_verbatim_received_peer_copies": 33,
+    "agents_unchanged_after_round_one": 47,
+    "late_unchanged_opinion_fraction": 0.8564814814814815,
+    "late_verbatim_own_message_fraction": 0.10185185185185185,
+    "late_verbatim_peer_copy_fraction": 0.1527777777777778
+  },
+  "baseline_active_runs": {
+    "runs": 9,
+    "late_agent_steps": 162,
+    "late_unchanged_opinions": 143,
+    "late_verbatim_own_message_repeats": 20,
+    "late_verbatim_received_peer_copies": 11,
+    "agents_unchanged_after_round_one": 38,
+    "late_unchanged_opinion_fraction": 0.8827160493827161,
+    "late_verbatim_own_message_fraction": 0.12345679012345678,
+    "late_verbatim_peer_copy_fraction": 0.06790123456790123
+  },
+  "same_agent_round_cross_condition_verbatim": {
+    "equal_pairs": 45,
+    "total_pairs": 432
+  },
+  "runs": [
+    {
+      "case": "control_11",
+      "source": "artifacts/runs/live_pilot_2026-11-23_v1/control.json",
+      "condition": "control",
+      "seed": 11,
+      "mean_absolute_step_by_round": [
+        0.0009243333333333233,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_round_share_of_total_absolute_path": 1.0,
+      "late_agent_steps": 18,
+      "late_unchanged_opinions": 18,
+      "agents_unchanged_after_round_one": 6,
+      "late_verbatim_own_message_repeats": 5,
+      "late_verbatim_received_peer_copies": 0,
+      "mean_adjacent_character_similarity": 0.6669151152438263,
+      "similarity_caveat": "SequenceMatcher character ratio is lexical, not semantic similarity or a model quality score.",
+      "unique_messages_per_agent": [
+        4,
+        2,
+        4,
+        2,
+        3,
+        3
+      ],
+      "peer_copy_examples": []
+    },
+    {
+      "case": "news_only_11",
+      "source": "artifacts/runs/live_pilot_2026-11-23_v1/news_only.json",
+      "condition": "news_only",
+      "seed": 11,
+      "mean_absolute_step_by_round": [
+        0.039513333333333324,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_round_share_of_total_absolute_path": 1.0,
+      "late_agent_steps": 18,
+      "late_unchanged_opinions": 18,
+      "agents_unchanged_after_round_one": 6,
+      "late_verbatim_own_message_repeats": 4,
+      "late_verbatim_received_peer_copies": 0,
+      "mean_adjacent_character_similarity": 0.6130119138202035,
+      "similarity_caveat": "SequenceMatcher character ratio is lexical, not semantic similarity or a model quality score.",
+      "unique_messages_per_agent": [
+        2,
+        2,
+        4,
+        4,
+        4,
+        3
+      ],
+      "peer_copy_examples": []
+    },
+    {
+      "case": "peers_only_11",
+      "source": "artifacts/runs/live_pilot_2026-11-23_v1/peers_only.json",
+      "condition": "peers_only",
+      "seed": 11,
+      "mean_absolute_step_by_round": [
+        0.031179999999999996,
+        0.010403500000000001,
+        0.01783533333333333,
+        0.0
+      ],
+      "first_round_share_of_total_absolute_path": 0.5247494481267162,
+      "late_agent_steps": 18,
+      "late_unchanged_opinions": 15,
+      "agents_unchanged_after_round_one": 3,
+      "late_verbatim_own_message_repeats": 0,
+      "late_verbatim_received_peer_copies": 0,
+      "mean_adjacent_character_similarity": 0.4329826320989123,
+      "similarity_caveat": "SequenceMatcher character ratio is lexical, not semantic similarity or a model quality score.",
+      "unique_messages_per_agent": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "peer_copy_examples": []
+    },
+    {
+      "case": "combined_11",
+      "source": "artifacts/runs/live_pilot_2026-11-23_v1/combined.json",
+      "condition": "combined",
+      "seed": 11,
+      "mean_absolute_step_by_round": [
+        0.031179999999999996,
+        0.027070166666666663,
+        0.0011686666666666696,
+        0.011666666666666667
+      ],
+      "first_round_share_of_total_absolute_path": 0.4386267241561218,
+      "late_agent_steps": 18,
+      "late_unchanged_opinions": 14,
+      "agents_unchanged_after_round_one": 3,
+      "late_verbatim_own_message_repeats": 0,
+      "late_verbatim_received_peer_copies": 5,
+      "mean_adjacent_character_similarity": 0.3467986793614382,
+      "similarity_caveat": "SequenceMatcher character ratio is lexical, not semantic similarity or a model quality score.",
+      "unique_messages_per_agent": [
+        3,
+        3,
+        4,
+        4,
+        3,
+        4
+      ],
+      "peer_copy_examples": [
+        {
+          "round": 2,
+          "agent": 0,
+          "source_agent": 1,
+          "message": "I still lean toward printed books because they are reliable for children who need a quiet, screen-free space to focus and learn."
+        },
+        {
+          "round": 3,
+          "agent": 1,
+          "source_agent": 0,
+          "message": "I still lean toward printed books because they are reliable for children who need a quiet, screen-free space to focus and learn."
+        }
+      ]
+    },
+    {
+      "case": "control_22",
+      "source": "artifacts/runs/robustness_study_2026-11-23_v1/control_22.json",
+      "condition": "control",
+      "seed": 22,
+      "mean_absolute_step_by_round": [
+        0.00026249999999999885,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_round_share_of_total_absolute_path": 1.0,
+      "late_agent_steps": 18,
+      "late_unchanged_opinions": 18,
+      "agents_unchanged_after_round_one": 6,
+      "late_verbatim_own_message_repeats": 10,
+      "late_verbatim_received_peer_copies": 0,
+      "mean_adjacent_character_similarity": 0.8105012559939528,
+      "similarity_caveat": "SequenceMatcher character ratio is lexical, not semantic similarity or a model quality score.",
+      "unique_messages_per_agent": [
+        4,
+        1,
+        3,
+        2,
+        2,
+        2
+      ],
+      "peer_copy_examples": []
+    },
+    {
+      "case": "news_only_22",
+      "source": "artifacts/runs/robustness_study_2026-11-23_v1/news_only_22.json",
+      "condition": "news_only",
+      "seed": 22,
+      "mean_absolute_step_by_round": [
+        0.00026249999999999885,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_round_share_of_total_absolute_path": 1.0,
+      "late_agent_steps": 18,
+      "late_unchanged_opinions": 18,
+      "agents_unchanged_after_round_one": 6,
+      "late_verbatim_own_message_repeats": 9,
+      "late_verbatim_received_peer_copies": 0,
+      "mean_adjacent_character_similarity": 0.72159094521551,
+      "similarity_caveat": "SequenceMatcher character ratio is lexical, not semantic similarity or a model quality score.",
+      "unique_messages_per_agent": [
+        4,
+        2,
+        3,
+        2,
+        2,
+        2
+      ],
+      "peer_copy_examples": []
+    },
+    {
+      "case": "peers_only_22",
+      "source": "artifacts/runs/robustness_study_2026-11-23_v1/peers_only_22.json",
+      "condition": "peers_only",
+      "seed": 22,
+      "mean_absolute_step_by_round": [
+        0.015991499999999992,
+        0.006072166666666666,
+        0.0,
+        0.0
+      ],
+      "first_round_share_of_total_absolute_path": 0.724788868577299,
+      "late_agent_steps": 18,
+      "late_unchanged_opinions": 16,
+      "agents_unchanged_after_round_one": 4,
+      "late_verbatim_own_message_repeats": 0,
+      "late_verbatim_received_peer_copies": 3,
+      "mean_adjacent_character_similarity": 0.43736417514127857,
+      "similarity_caveat": "SequenceMatcher character ratio is lexical, not semantic similarity or a model quality score.",
+      "unique_messages_per_agent": [
+        2,
+        3,
+        4,
+        4,
+        4,
+        4
+      ],
+      "peer_copy_examples": [
+        {
+          "round": 2,
+          "agent": 1,
+          "source_agent": 0,
+          "message": "I still lean toward printed books because they offer a tangible reading experience without the need for constant digital access or updates."
+        },
+        {
+          "round": 3,
+          "agent": 0,
+          "source_agent": 1,
+          "message": "I still lean toward printed books because they offer a tangible reading experience without the need for constant digital access or updates."
+        }
+      ]
+    },
+    {
+      "case": "combined_22",
+      "source": "artifacts/runs/robustness_study_2026-11-23_v1/combined_22.json",
+      "condition": "combined",
+      "seed": 22,
+      "mean_absolute_step_by_round": [
+        0.02206366666666666,
+        0.01736316666666667,
+        0.0,
+        0.0
+      ],
+      "first_round_share_of_total_absolute_path": 0.5596104176089887,
+      "late_agent_steps": 18,
+      "late_unchanged_opinions": 17,
+      "agents_unchanged_after_round_one": 5,
+      "late_verbatim_own_message_repeats": 0,
+      "late_verbatim_received_peer_copies": 3,
+      "mean_adjacent_character_similarity": 0.4235465781619715,
+      "similarity_caveat": "SequenceMatcher character ratio is lexical, not semantic similarity or a model quality score.",
+      "unique_messages_per_agent": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4
+      ],
+      "peer_copy_examples": [
+        {
+          "round": 2,
+          "agent": 1,
+          "source_agent": 0,
+          "message": "I still lean toward printed books because they offer a tactile reading experience that digital screens cannot fully replicate."
+        },
+        {
+          "round": 3,
+          "agent": 0,
+          "source_agent": 1,
+          "message": "I still lean toward printed books because they offer a tactile reading experience that digital screens cannot fully replicate."
+        }
+      ]
+    },
+    {
+      "case": "control_33",
+      "source": "artifacts/runs/robustness_study_2026-11-23_v1/control_33.json",
+      "condition": "control",
+      "seed": 33,
+      "mean_absolute_step_by_round": [
+        0.0002036666666666668,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_round_share_of_total_absolute_path": 1.0,
+      "late_agent_steps": 18,
+      "late_unchanged_opinions": 18,
+      "agents_unchanged_after_round_one": 6,
+      "late_verbatim_own_message_repeats": 10,
+      "late_verbatim_received_peer_copies": 0,
+      "mean_adjacent_character_similarity": 0.8080334552772931,
+      "similarity_caveat": "SequenceMatcher character ratio is lexical, not semantic similarity or a model quality score.",
+      "unique_messages_per_agent": [
+        3,
+        1,
+        3,
+        2,
+        3,
+        2
+      ],
+      "peer_copy_examples": []
+    },
+    {
+      "case": "news_only_33",
+      "source": "artifacts/runs/robustness_study_2026-11-23_v1/news_only_33.json",
+      "condition": "news_only",
+      "seed": 33,
+      "mean_absolute_step_by_round": [
+        0.0025874999999999974,
+        0.00014716666666667044,
+        0.0,
+        0.0
+      ],
+      "first_round_share_of_total_absolute_path": 0.946184787908336,
+      "late_agent_steps": 18,
+      "late_unchanged_opinions": 17,
+      "agents_unchanged_after_round_one": 5,
+      "late_verbatim_own_message_repeats": 7,
+      "late_verbatim_received_peer_copies": 0,
+      "mean_adjacent_character_similarity": 0.6550603590406696,
+      "similarity_caveat": "SequenceMatcher character ratio is lexical, not semantic similarity or a model quality score.",
+      "unique_messages_per_agent": [
+        3,
+        2,
+        4,
+        3,
+        3,
+        2
+      ],
+      "peer_copy_examples": []
+    },
+    {
+      "case": "peers_only_33",
+      "source": "artifacts/runs/robustness_study_2026-11-23_v1/peers_only_33.json",
+      "condition": "peers_only",
+      "seed": 33,
+      "mean_absolute_step_by_round": [
+        0.01925416666666667,
+        0.00876383333333334,
+        0.012965666666666672,
+        0.011666666666666659
+      ],
+      "first_round_share_of_total_absolute_path": 0.36569885597432117,
+      "late_agent_steps": 18,
+      "late_unchanged_opinions": 13,
+      "agents_unchanged_after_round_one": 2,
+      "late_verbatim_own_message_repeats": 0,
+      "late_verbatim_received_peer_copies": 0,
+      "mean_adjacent_character_similarity": 0.4023285147844606,
+      "similarity_caveat": "SequenceMatcher character ratio is lexical, not semantic similarity or a model quality score.",
+      "unique_messages_per_agent": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "peer_copy_examples": []
+    },
+    {
+      "case": "combined_33",
+      "source": "artifacts/runs/robustness_study_2026-11-23_v1/combined_33.json",
+      "condition": "combined",
+      "seed": 33,
+      "mean_absolute_step_by_round": [
+        0.01925416666666667,
+        0.02077783333333334,
+        0.0,
+        0.011666666666666659
+      ],
+      "first_round_share_of_total_absolute_path": 0.37243062361376184,
+      "late_agent_steps": 18,
+      "late_unchanged_opinions": 15,
+      "agents_unchanged_after_round_one": 4,
+      "late_verbatim_own_message_repeats": 0,
+      "late_verbatim_received_peer_copies": 0,
+      "mean_adjacent_character_similarity": 0.4425780203433969,
+      "similarity_caveat": "SequenceMatcher character ratio is lexical, not semantic similarity or a model quality score.",
+      "unique_messages_per_agent": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "peer_copy_examples": []
+    },
+    {
+      "case": "combined_memory4_11",
+      "source": "artifacts/runs/robustness_study_2026-11-23_v1/combined_memory4_11.json",
+      "condition": "combined_memory4",
+      "seed": 11,
+      "mean_absolute_step_by_round": [
+        0.031179999999999996,
+        0.028238833333333335,
+        0.0,
+        0.0
+      ],
+      "first_round_share_of_total_absolute_path": 0.5247494481267162,
+      "late_agent_steps": 18,
+      "late_unchanged_opinions": 15,
+      "agents_unchanged_after_round_one": 3,
+      "late_verbatim_own_message_repeats": 0,
+      "late_verbatim_received_peer_copies": 8,
+      "mean_adjacent_character_similarity": 0.4370206077776305,
+      "similarity_caveat": "SequenceMatcher character ratio is lexical, not semantic similarity or a model quality score.",
+      "unique_messages_per_agent": [
+        2,
+        2,
+        4,
+        4,
+        4,
+        4
+      ],
+      "peer_copy_examples": [
+        {
+          "round": 2,
+          "agent": 0,
+          "source_agent": 1,
+          "message": "I still lean toward printed books because they are reliable for children who need a quiet, screen-free space to focus and learn."
+        },
+        {
+          "round": 2,
+          "agent": 1,
+          "source_agent": 0,
+          "message": "I still lean toward printed books because they offer a tactile reading experience that supports focus and retention for many students. While digital access is useful, I worry about screen fatigue and the need for reliable devices at home."
+        }
+      ]
+    },
+    {
+      "case": "combined_no_initial_11",
+      "source": "artifacts/runs/robustness_study_2026-11-23_v1/combined_no_initial_11.json",
+      "condition": "combined_no_initial",
+      "seed": 11,
+      "mean_absolute_step_by_round": [
+        0.031179999999999996,
+        0.01157216666666667,
+        0.0,
+        0.0
+      ],
+      "first_round_share_of_total_absolute_path": 0.7293197615715382,
+      "late_agent_steps": 18,
+      "late_unchanged_opinions": 16,
+      "agents_unchanged_after_round_one": 4,
+      "late_verbatim_own_message_repeats": 0,
+      "late_verbatim_received_peer_copies": 7,
+      "mean_adjacent_character_similarity": 0.3998188992548579,
+      "similarity_caveat": "SequenceMatcher character ratio is lexical, not semantic similarity or a model quality score.",
+      "unique_messages_per_agent": [
+        4,
+        2,
+        3,
+        4,
+        4,
+        4
+      ],
+      "peer_copy_examples": [
+        {
+          "round": 2,
+          "agent": 2,
+          "source_agent": 1,
+          "message": "I still lean toward printed books because they offer a quieter, more focused reading experience for children and adults alike. While digital access is useful, physical books can be shared without batteries or subscriptions, which helps our community stay connected in a simple, reliable way."
+        },
+        {
+          "round": 2,
+          "agent": 4,
+          "source_agent": 3,
+          "message": "I lean toward digital access because it can reach more residents quickly, but I still value printed books for those who prefer them."
+        }
+      ]
+    },
+    {
+      "case": "combined_memory4_no_initial_11",
+      "source": "artifacts/runs/robustness_study_2026-11-23_v1/combined_memory4_no_initial_11.json",
+      "condition": "combined_memory4_no_initial",
+      "seed": 11,
+      "mean_absolute_step_by_round": [
+        0.031179999999999996,
+        0.059807500000000006,
+        0.02,
+        0.00999999999999999
+      ],
+      "first_round_share_of_total_absolute_path": 0.2577125736129765,
+      "late_agent_steps": 18,
+      "late_unchanged_opinions": 11,
+      "agents_unchanged_after_round_one": 2,
+      "late_verbatim_own_message_repeats": 2,
+      "late_verbatim_received_peer_copies": 7,
+      "mean_adjacent_character_similarity": 0.5382028388433273,
+      "similarity_caveat": "SequenceMatcher character ratio is lexical, not semantic similarity or a model quality score.",
+      "unique_messages_per_agent": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        4
+      ],
+      "peer_copy_examples": [
+        {
+          "round": 2,
+          "agent": 0,
+          "source_agent": 1,
+          "message": "I still lean toward printed books because they offer a quieter, more focused reading experience for children and adults alike. While digital access is useful, physical books can be shared without batteries or subscriptions, which helps our community stay connected in a simple, reliable way."
+        },
+        {
+          "round": 2,
+          "agent": 1,
+          "source_agent": 0,
+          "message": "I lean toward printed books because they offer a tactile reading experience that supports focus and reduces screen fatigue. While digital access is useful for convenience, physical books remain central to community identity and long-term preservation."
+        }
+      ]
+    }
+  ]
+}

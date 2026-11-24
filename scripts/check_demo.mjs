@@ -4,7 +4,8 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const qa=path.join(root,'reports','qa','demo');await fs.mkdir(qa,{recursive:true});
+const discussion=process.argv[3]==='discussion';
+const qa=path.join(root,'reports','qa',discussion?'discussion':'demo');await fs.mkdir(qa,{recursive:true});
 if(typeof WebSocket!=='function')throw Error('Node 22+ with built-in WebSocket is required');
 const profile=await fs.mkdtemp(path.join(qa,'cdp-profile-'));
 const chrome=spawn(process.argv[2],[ '--headless=new','--disable-gpu','--disable-background-networking',
@@ -33,10 +34,26 @@ try{
  await command('Page.enable');await command('Runtime.enable');const results=[];
  for(const [label,width,height,mobile] of [['desktop',1280,1400,false],['mobile',420,1900,true]]){
   await command('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile});
-  await command('Page.navigate',{url:pathToFileURL(path.join(root,'demo','replay.html')).href});
-  let ready=false;for(let i=0;i<100;i++){if(await evaluate("document.documentElement.dataset.case==='combined_11'")){ready=true;break;}await sleep(50);}
+  await command('Page.navigate',{url:pathToFileURL(path.join(root,'demo',discussion?'discussion.html':'replay.html')).href});
+  let ready=false;for(let i=0;i<100;i++){if(await evaluate(discussion?"Boolean(document.getElementById('message')?.textContent)":"document.documentElement.dataset.case==='combined_11'")){ready=true;break;}await sleep(50);}
   if(!ready)throw Error('Replay did not render');
-  const result=await evaluate(`(async()=>{
+  const result=discussion?await evaluate(`(()=>{
+   const d=document,checks=[];const ok=(name,value)=>{checks.push({name,passed:Boolean(value)});if(!value)throw Error(name);};
+   const change=(id,value,type='change')=>{d.getElementById(id).value=String(value);d.getElementById(id).dispatchEvent(new Event(type,{bubbles:true}));};
+   ok('exact viewport',window.innerWidth===${width});
+   ok('both model routes',Object.keys(DATA.cases).some(k=>k.startsWith('codex/'))&&Object.keys(DATA.cases).some(k=>k.startsWith('bonsai/')));
+   ok('six completed cases',Object.keys(DATA.cases).length===6);
+   change('case','bonsai/rotating_text');ok('initial no partners',d.querySelectorAll('#graph line').length===0);
+   const pairs=new Set();for(let t=1;t<=5;t++){change('round',t,'input');ok('three pairs round '+t,d.querySelectorAll('#graph line').length===3);for(let pair of DATA.cases['bonsai/rotating_text'].pair_schedule[t-1])pairs.add(pair.join('-'));}
+   ok('fifteen unique pairs',pairs.size===15);ok('latest event displayed',d.getElementById('event').textContent.includes('E5_SUPPORT'));
+   d.getElementById('agents').children[2].click();ok('agent selection',d.getElementById('role').textContent.includes('Агент 2'));
+   ok('verbatim preserved message',d.getElementById('message').textContent===DATA.cases['bonsai/rotating_text'].actions[5][2].message);
+   change('case','bonsai/rotating_role_only');change('round',3,'input');ok('role-only profile fallback',d.getElementById('needs').textContent.includes('скрыты'));
+   ok('role-only recorded positions',DATA.cases['bonsai/rotating_role_only'].trajectory[3].opinions.every(x=>x===-1));
+   change('case','codex/rotating_text');change('round',4,'input');ok('correction displayed',d.getElementById('event').textContent.includes('E4_CORRECTION'));
+   ok('no horizontal overflow',d.documentElement.scrollWidth<=window.innerWidth);
+   return {checks,viewport:window.innerWidth,overflow:d.documentElement.scrollWidth>window.innerWidth};
+  })()`):await evaluate(`(async()=>{
    const d=document,checks=[];const ok=(name,value)=>{checks.push({name,passed:Boolean(value)});if(!value)throw Error(name);};
    const change=(id,value,type='change')=>{d.getElementById(id).value=String(value);d.getElementById(id).dispatchEvent(new Event(type,{bubbles:true}));};
    ok('exact viewport',window.innerWidth===${width});

@@ -1,0 +1,12 @@
+{
+  "status": "ok",
+  "calls": 12,
+  "completed": [
+    {
+      "run": "rotating_text",
+      "status": "ok",
+      "calls": 12
+    }
+  ],
+  "finished_utc": "2026-11-24T23:24:25.847930+00:00"
+}
